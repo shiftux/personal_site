@@ -22,6 +22,12 @@
   font: 'Poppins', 'Raleway';
   color: #222;
 }
+.heading {
+  font-family: 'Raleway';
+  font-weight: 700;
+}
+
+/**** Navbar ****/
 #global-nav {
   background-color: #18314fff;
 }
@@ -85,7 +91,6 @@
   background-color: #18314fff;
   color: #f5f5f5;
 }
-
 /* Flipping Cards */
 .card-container {
   display: grid;
@@ -112,13 +117,28 @@
   transform: rotateY(180deg);
 }
 
-/**** connect section ****/
+/**** Work & experience section ****/
+#work .heading{
+  color: #18314fff;
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+}
+.timeline-hr {
+  width: 30%;
+  height: 6px;
+  margin: auto;
+  border: 0;
+  border-bottom: 6px solid;
+  border-bottom-color: #18314fff;
+  margin-bottom: 15px;
+}
 .timeline { /* the vertical line */
   position: relative;
   margin: 0 auto;
   box-sizing: content-box;
 }
 .timeline::after {
+  margin-top: -15px;
   content: '';
   position: absolute;
   width: 6px;
@@ -281,6 +301,9 @@ footer {
     left: 31px;
   }
   /* Timleline */
+  .timeline-hr {
+    margin-left: unset;
+  }
   .container {
     width: 100%;
     padding-left: 70px;
