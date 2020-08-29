@@ -1,10 +1,19 @@
+/**** Fonts ****/
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
-/* Fonts:
+/*
 * Raleway for titles
 * text: poppins
 * about me: inconsolata
+*/
+
+/**** Colors ****
+--cerulean-frost: #6798beff;
+--prussian-blue: #18314fff;
+--y-in-mn-blue: #384e77ff;
+--green-sheen: #8bbeb2ff;
+--key-lime: #e6f9afff;
 */
 
 .html .body {
@@ -13,8 +22,8 @@
   font: 'Poppins', 'Raleway';
   color: #222;
 }
-.navbar {
-  padding: .8rem;
+#global-nav {
+  background-color: #18314fff;
 }
 .navbar-nav li {
   padding-right: 20px;
@@ -23,42 +32,37 @@
   font-size: 1.1em !important;
 }
 
-/* Intro parallax */
+/**** Intro parallax ****/
 .welcome {
   height: 100%;
 }
-
 .welcome .row {
   display: block;
 }
-
 .parallax {
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
 }
-
 .parallaxsection {
   background-image: url('img/bg_sandro.jpg');
   height: 100%;
 }
-
 .jumbotron{
   margin-bottom: 0; /* remove default margin */
   border-radius: 0;
+  background-size: cover;
 }
-
 /* Text style for Parallax Welcome */
 .parallax p {
   font-family: 'Raleway';
   font-size: 24px;
   font-style: italic;
   color:#f5f5f5;
-  margin-top: 20vh;
+  margin-top: 35vh;
   margin-bottom: -0.5rem;
   font-weight: bolder;
 }
-
 .parallax h1 {
   color: rgba(255, 255, 255, 0.9);
   font-size: 60px;
@@ -66,7 +70,6 @@
   line-height: 100px;
   position: relative;
 }
-
 .welcome h1:after, .welcome h1:before {
   /* https://stackoverflow.com/questions/5214127/css-technique-for-a-horizontal-line-with-words-in-the-middle */
   content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
@@ -77,15 +80,10 @@
   vertical-align: bottom;
 }
 
-/*---Media Queries --*/
-@media (max-width: 992px) {
-
-  }
-@media (max-width: 768px) {
-
-}
-@media (max-width: 576px) {
-
+/**** Projects ****/
+#projectsSection {
+  background-color: #18314fff;
+  color: #f5f5f5;
 }
 
 /* Flipping Cards */
@@ -93,53 +91,240 @@
   display: grid;
   perspective: 700px;
 }
-
 .flip-card, .card-container {
   display: grid; grid-template: 1fr / 1fr;
   grid-template-areas: "frontAndBack";
   transform-style: preserve-3d;
   transition: all 0.7s ease;
 }
-
 .flip-card div {
   backface-visibility: hidden;
   transform-style: preserve-3d;
 }
-
 .front {
   grid-area: frontAndBack;
 }
-
 .back {
   grid-area: frontAndBack;
   transform: rotateY(-180deg);
 }
-
 .card-container:hover .flip-card {
   transform: rotateY(180deg);
 }
 
-/* .card-container {
-  perspective: 700px;
+/**** connect section ****/
+.timeline { /* the vertical line */
+  position: relative;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #18314fff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: white;
+  border: 4px solid #D7F57D;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -13px;
+}
+/* Place the container to the left */
+.left {
+  left: -25%;
+  position: relative;
+}
+/* Place the container to the right */
+.right {
+  left: 25%;
+  position: relative;
+}
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #18314fff;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #18314fff;
+}
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #18314fff;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #18314fff transparent transparent;
+}
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #18314fff;
+  position: relative;
+  color: white;
+  border-radius: 6px;
 }
 
-.flip-card {
-  transform-style: preserve-3d;
-  transition: all 0.7s ease;
+/**** connect section ****/
+.social a {
+  font-size: 4em;
+  padding: 3rem;
+}
+.fa-envelope {
+  color: #b3b3b3;
+}
+.fa-linkedin {
+  color: #2867B2;
+}
+.fa-github {
+  color: #000000;
+}
+.fa-youtube {
+  color: #bb0000;
+}
+.fa-cube {
+  color: #248bfb;
 }
 
-.flip-card div {
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
+/**** footer ****/
+footer {
+  background-color: #18314fff;
+  color: #f5f5f5;
 }
 
-.back {
-  transform: rotateY(-180deg);
-}
+/*--- Media Queries for responsive design ---*/
+/*
+  Breakpoints for responsive design
 
-.card-container:hover .flip-card {
-  transform: rotateY(180deg);
-} */
+  Extra small (xs) devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap
+
+  Small (sm) devices (landscape phones, 576px and up)
+  @media (min-width: 576px) { ... }
+
+  Medium (md) devices (tablets, 768px and up)
+  @media (min-width: 768px) { ... }
+
+  Large (lg) devices (desktops, 992px and up)
+  @media (min-width: 992px) { ... }
+
+  Extra (xl) large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 3.5em;
+    padding: 2rem;
+  }
+  .parallax p {
+    font-size: 22px;
+  }
+  .parallax h1 {
+    font-size: 50px;
+    line-height: 80px;
+  }
+  .welcome h1:after, .welcome h1:before {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .social a {
+    font-size: 3em;
+    padding: 1.5rem;
+  }
+  .parallax {
+    background-position: 60% 50%;
+  }
+  .parallax p {
+    font-size: 20px;
+  }
+  .parallax h1 {
+    font-size: 38px;
+    line-height: 60px;
+  }
+  .welcome h1:after, .welcome h1:before {
+    font-size: 16px;
+  }
+  .timeline::after {
+    left: 31px;
+  }
+  /* Timleline */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    max-width: inherit;
+  }
+  .left{
+    left: auto;
+  }
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    border: medium solid #18314fff;
+    left: 60px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #18314fff transparent transparent;
+  }
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .social a {
+    font-size: 2em;
+    padding: 1rem;
+  }
+  .parallax {
+    background-position: 60% 50%;
+  }
+  .parallax p {
+    font-size: 18px;
+  }
+  .parallax h1 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .welcome h1:after, .welcome h1:before {
+    visibility: hidden;
+  }
+}
 
 /*---Firefox Bug Fix --*/
 .carousel-item {
@@ -182,34 +367,3 @@ figure {
 [class*="col-"] {
     padding: 1rem;
 }
-
-
-
-
-
-/*
-Breakpoints for responsive design
-
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
-
-
-
-
-
-
-
-

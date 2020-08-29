@@ -11,7 +11,7 @@
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<nav id="global-nav" class="navbar navbar-expand-md navbar-dark fixed-top">
 	<div class="container-fluid">
 		<a class="navbar-brand" href="https://shiftux.org"><img height="50px" src="img/logo_pic.png"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -57,13 +57,13 @@
 	</div>
 </section>
 
-<section id="dummyText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt minus aspernatur minima excepturi maxime? Quod autem repellendus dolorum, aspernatur nostrum temporibus dolorem cum nemo eos corporis id quasi sed explicabo.
-Quisquam modi blanditiis repudiandae eos ex. Ad eveniet, quibusdam enim eos velit quo, nemo dolorum omnis nobis quae voluptatem doloremque dolore commodi iste voluptas natus officiis laborum aperiam cum consequatur?
-Inventore incidunt iusto totam alias unde eveniet nulla consequuntur, numquam asperiores. Illo deleniti reprehenderit nihil cupiditate ipsum numquam! Cum, similique. Corrupti repellat repellendus necessitatibus facilis soluta fuga voluptatum, temporibus suscipit.
-Commodi delectus atque nostrum ratione officiis dolorum impedit harum maiores ipsam laudantium natus quibusdam quos autem saepe, explicabo vel, eligendi quidem velit aperiam ut voluptate hic voluptas. Architecto, eligendi totam.
-</section>
-
 <!--- About Me -->
+<section id="dummyText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt minus aspernatur minima excepturi maxime? Quod autem repellendus dolorum, aspernatur nostrum temporibus dolorem cum nemo eos corporis id quasi sed explicabo.
+	Quisquam modi blanditiis repudiandae eos ex. Ad eveniet, quibusdam enim eos velit quo, nemo dolorum omnis nobis quae voluptatem doloremque dolore commodi iste voluptas natus officiis laborum aperiam cum consequatur?
+	Inventore incidunt iusto totam alias unde eveniet nulla consequuntur, numquam asperiores. Illo deleniti reprehenderit nihil cupiditate ipsum numquam! Cum, similique. Corrupti repellat repellendus necessitatibus facilis soluta fuga voluptatum, temporibus suscipit.
+	Commodi delectus atque nostrum ratione officiis dolorum impedit harum maiores ipsam laudantium natus quibusdam quos autem saepe, explicabo vel, eligendi quidem velit aperiam ut voluptate hic voluptas. Architecto, eligendi totam.
+
+</section>
 
 <!--- Projects -->
 <section id="projectsSection">
@@ -127,6 +127,38 @@ Commodi delectus atque nostrum ratione officiis dolorum impedit harum maiores ip
 	</div>
 </section> <!--- End Projects -->
 
+<!--- Work & Experience -->
+<section id="work">
+	<div class="container-fluid padding">
+		<div class="timeline">
+			<div class="container left">
+			  <div class="content">
+				<h2>2017</h2>
+				<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+			  </div>
+			</div>
+			<div class="container right">
+			  <div class="content">
+				<h2>2016</h2>
+				<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+			  </div>
+			</div>
+			<div class="container left">
+			  <div class="content">
+				<h2>2015</h2>
+				<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+			  </div>
+			</div>
+			<div class="container right">
+			  <div class="content">
+				<h2>2012</h2>
+				<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!--- Connect -->
 <div class="container-fluid padding">
 	<div class="row padding text-center">
@@ -137,7 +169,7 @@ Commodi delectus atque nostrum ratione officiis dolorum impedit harum maiores ip
 			<a href="#"><i class="fas fa-envelope" aria-hidden="true"></i></a>
 			<a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 			<a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
-			<a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+			<a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
 			<a href="#"><i class="fas fa-cube" aria-hidden="true"></i></a>
 		</div>
 	</div>
@@ -180,7 +212,7 @@ Commodi delectus atque nostrum ratione officiis dolorum impedit harum maiores ip
 		// fade in .navbar
 		$(function () {
 			$(window).scroll(function () {
-				if ($(this).scrollTop() > ($(window).innerHeight() * 0.7)) {
+				if ($(this).scrollTop() > ($(window).innerHeight() * 0.3)) {
 					$('.navbar').fadeIn();
 				} else {
 					$('.navbar').fadeOut();
