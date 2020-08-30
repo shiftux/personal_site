@@ -123,6 +123,9 @@
 }
 
 /************************* Work & experience section **************************/
+#work {
+  padding-bottom: 5em;
+}
 #work .heading{
   margin-top: 1.5em;
   margin-bottom: .5em;
@@ -143,6 +146,7 @@
 }
 .timeline::after {
   margin-top: -15px;
+  margin-bottom: -20px;
   content: '';
   position: absolute;
   width: 6px;
@@ -247,6 +251,32 @@
   border-color: transparent #18314fff transparent transparent;
 }
 
+/************************* skillz section **************************/
+.skillz-subtitle {
+  width: 75%;
+  left: 12.5%;
+}
+#skillzSection .col-md-6 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.skillz-score-content {
+  width: 75%;
+  margin-left: 12.5%;
+}
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+}
+.skillz-title {
+  display: inline-block;
+  width: 60%;
+}
+.skillz-score {
+  float: right;
+  padding-right: 8%;
+}
+
 /************************* connect section **************************/
 .social a {
   font-size: 4em;
@@ -306,6 +336,14 @@ footer {
   }
   .welcome h1:after, .welcome h1:before {
     font-size: 20px;
+  }
+  .skillz-subtitle {
+    width: 90%;
+    left: 5%;
+  }
+  .skillz-score-content {
+    width: 90%;
+    margin-left: 5%;
   }
 }
 @media (max-width: 768px) {
