@@ -1,4 +1,4 @@
-/**** Fonts ****/
+/************************* Fonts **************************/
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
@@ -8,7 +8,7 @@
 * about me: inconsolata
 */
 
-/**** Colors ****
+/************************* Colors **************************
 --cerulean-frost: #6798beff;
 --prussian-blue: #18314fff;
 --y-in-mn-blue: #384e77ff;
@@ -26,10 +26,16 @@
   font-family: 'Raleway';
   font-weight: 700;
 }
-
-/**** Navbar ****/
-#global-nav {
+.blue-text {
+  color: #18314fff;
+}
+.blue-background {
   background-color: #18314fff;
+}
+
+/************************* Navbar **************************/
+#global-nav {
+  background-color: ;
 }
 .navbar-nav li {
   padding-right: 20px;
@@ -38,7 +44,7 @@
   font-size: 1.1em !important;
 }
 
-/**** Intro parallax ****/
+/************************* Intro parallax **************************/
 .welcome {
   height: 100%;
 }
@@ -86,9 +92,8 @@
   vertical-align: bottom;
 }
 
-/**** Projects ****/
+/************************* Projects **************************/
 #projectsSection {
-  background-color: #18314fff;
   color: #f5f5f5;
 }
 /* Flipping Cards */
@@ -117,9 +122,8 @@
   transform: rotateY(180deg);
 }
 
-/**** Work & experience section ****/
+/************************* Work & experience section **************************/
 #work .heading{
-  color: #18314fff;
   margin-top: 1.5em;
   margin-bottom: .5em;
 }
@@ -147,6 +151,38 @@
   bottom: 0;
   left: 50%;
   margin-left: -3px;
+  z-index: -1;
+}
+/* horizontal flip cards for timeline */
+.tl-flip-card, .container {
+  display: grid; grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+.tl-flip-card div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border: 6px solid #18314fff;
+  border-radius: 6px;
+}
+.tl-front {
+  grid-area: frontAndBack;
+  padding: 20px 30px;
+  position: relative;
+  color: white;
+}
+.tl-back {
+  grid-area: frontAndBack;
+  transform: rotateX(-180deg);
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  background-color: white;
+  border-color: #18314fff;
+}
+.container:hover .tl-flip-card {
+  transform: rotateX(180deg);
 }
 /* Container around content */
 .container {
@@ -154,6 +190,8 @@
   position: relative;
   background-color: inherit;
   width: 50%;
+  display: grid;
+  perspective: 700px;
 }
 /* The circles on the timeline */
 .container::after {
@@ -208,16 +246,8 @@
   border-width: 10px 10px 10px 0;
   border-color: transparent #18314fff transparent transparent;
 }
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: #18314fff;
-  position: relative;
-  color: white;
-  border-radius: 6px;
-}
 
-/**** connect section ****/
+/************************* connect section **************************/
 .social a {
   font-size: 4em;
   padding: 3rem;
@@ -238,9 +268,8 @@
   color: #248bfb;
 }
 
-/**** footer ****/
+/************************* footer **************************/
 footer {
-  background-color: #18314fff;
   color: #f5f5f5;
 }
 
