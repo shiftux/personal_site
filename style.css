@@ -259,6 +259,7 @@
 #skillzSection .col-md-6 {
   padding-top: 0;
   padding-bottom: 0;
+  padding-right: 4%;
 }
 .skillz-score-content {
   width: 75%;
@@ -270,11 +271,26 @@
 }
 .skillz-title {
   display: inline-block;
-  width: 60%;
+  width: 65%;
 }
 .skillz-score {
   float: right;
-  padding-right: 8%;
+}
+.no-bullets li {
+  transition: all .2s ease-in-out;
+}
+.no-bullets svg {
+  /* transition: width .2s ease-in-out; */
+  transition: padding-right .2s ease-in-out;
+}
+.no-bullets li:hover {
+  background-color: #E2E8F2;
+  border-radius: 3px;
+  transform: scale(1.05);
+}
+.no-bullets li:hover svg {
+  transform: scale(1.3);
+  margin-right: 3px;
 }
 
 /************************* connect section **************************/
