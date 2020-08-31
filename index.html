@@ -19,25 +19,28 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="navbar-item active">
-					<a class="nav-link" href="#">About Me</a>
+					<a class="nav-link" href="#aboutmeSection">About Me</a>
 				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+				<!-- <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#projects" role="button"
 						aria-haspopup="true" aria-expanded="false">Projects</a>
 					<div class="dropdown-menu bg-light">
 						<a class="dropdown-item" href="#">IT</a>
 						<a class="dropdown-item" href="#">Making & 3D</a>
 						<a class="dropdown-item" href="#">Travel</a>
 					</div>
+				</li> -->
+				<li class="navbar-item">
+					<a class="nav-link" href="#projectsSection">Projects</a>
 				</li>
 				<li class="navbar-item">
-					<a class="nav-link" href="#">Work & Experience</a>
+					<a class="nav-link" href="#workSection">Work & Experience</a>
 				</li>
 				<li class="navbar-item">
-					<a class="nav-link" href="#">Skillz & what I like</a>
+					<a class="nav-link" href="#skillzSection">Skillz & what I like</a>
 				</li>
 				<li class="navbar-item">
-					<a class="nav-link" href="#">Connect</a>
+					<a class="nav-link" href="#connectSection">Connect</a>
 				</li>
 			</ul>
 		</div>
@@ -45,7 +48,7 @@
 </nav> <!-- End Navigation -->
 
 <!--- Welcome -->
-<section>
+<section id="welcomeSection">
 	<div class="welcome">
 		<div class="jumbotron parallax parallaxsection">
 			<div class="row text-center">
@@ -57,21 +60,49 @@
 </section>
 
 <!--- About Me -->
-<section id="dummyText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt minus aspernatur minima excepturi maxime? Quod autem repellendus dolorum, aspernatur nostrum temporibus dolorem cum nemo eos corporis id quasi sed explicabo.
-	Quisquam modi blanditiis repudiandae eos ex. Ad eveniet, quibusdam enim eos velit quo, nemo dolorum omnis nobis quae voluptatem doloremque dolore commodi iste voluptas natus officiis laborum aperiam cum consequatur?
-	Inventore incidunt iusto totam alias unde eveniet nulla consequuntur, numquam asperiores. Illo deleniti reprehenderit nihil cupiditate ipsum numquam! Cum, similique. Corrupti repellat repellendus necessitatibus facilis soluta fuga voluptatum, temporibus suscipit.
-	Commodi delectus atque nostrum ratione officiis dolorum impedit harum maiores ipsam laudantium natus quibusdam quos autem saepe, explicabo vel, eligendi quidem velit aperiam ut voluptate hic voluptas. Architecto, eligendi totam.
-
+<section id="aboutmeSection">
+	<div class="container-fluid padding blue-text">
+		<div class="row text-center">
+			<div class="col-12 heading-row">
+				<h1 class="heading">About Me</h1>
+			</div>
+		</div>
+		<div class="row padding">
+			<div class="col-lg-4 col-md-6 aboutme-col">
+				<ul class="no-bullets">
+					<li class="aboutmeLi"><span class="aboutmeKey"><b>Name: </b></span><span class="aboutmeValue">Sandro Montanari</span></li>
+					<li class="aboutmeLi"><span class="aboutmeKey"><b>Location: </b></span><span class="aboutmeValue">Switzerland</span></li>
+					<li class="aboutmeLi"><span class="aboutmeKey"><b>Email: </b></span><span class="aboutmeValue"><a href = "mailto: test@email.com">test@email.com</a></span></li>
+				</ul>
+				<div class="aboutme-img">
+					<img src="img/logo_pic.png" width="60%" class="center">
+				</div>
+				<div class="social padding">
+					<a href="#"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+					<a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+					<a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
+					<a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+					<a href="#"><i class="fas fa-cube" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-6">
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores distinctio fugit assumenda consequatur placeat, quo commodi dicta deserunt tempora molestiae perferendis minima est rerum ipsam quos quam labore nihil totam?
+				Labore error quae molestias temporibus corrupti minus! Deserunt nostrum molestias, unde id voluptatibus dolor impedit dolores! Explicabo quaerat, ut sunt in quam nisi harum iure earum eaque itaque perferendis distinctio?
+				Consectetur ab libero eum, nam ut accusamus, tempora veritatis, laboriosam consequuntur unde quas inventore. Commodi sit, laboriosam, quaerat voluptate quidem pariatur veritatis asperiores, tenetur obcaecati dolore enim expedita illum id.
+				</p>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur sequi obcaecati quas aspernatur placeat dolor autem ratione vitae molestias eveniet accusantium reprehenderit voluptates ipsam nisi, repudiandae in! Quaerat, earum inventore.Reprehenderit labore ad odit est voluptatum unde mollitia officia, cupiditate praesentium quo dignissimos similique eaque quibusdam, debitis quisquam cum veniam nam error ipsum obcaecati modi dicta non? Obcaecati, fugiat voluptatem?</p>
+			</div>
+		</div>
+	</div>
 </section>
 
 <!--- Projects -->
 <section id="projectsSection" class="blue-background">
 	<div class="container-fluid padding">
 		<div class="row text-center">
-			<div class="col-12">
-				<h1 class="display-4 heading">Projects</h1>
+			<div class="col-12 heading-row">
+				<h1 class="heading">Projects</h1>
 			</div>
-			<hr>
 		</div>
 	</div>
 
@@ -127,13 +158,12 @@
 </section> <!--- End Projects -->
 
 <!--- Work & Experience -->
-<section id="work">
+<section id="workSection">
 	<div class="container-fluid padding">
 		<div class="row text-center padding">
-			<div class="col-12">
-				<h1 class="display-4 blue-text heading">Work & Experience</h1>
+			<div class="col-12 heading-row">
+				<h1 class="blue-text heading">Work & Experience</h1>
 			</div>
-			<hr>
 		</div>
 	</div>
 
@@ -208,12 +238,22 @@
 <section id="educationSection" class="blue-background">
 	<div class="container-fluid padding">
 		<div class="row text-center">
-			<div class="col-12">
-				<h1 class="display-4 heading">Education</h1>
+			<div class="col-12 heading-row">
+				<h1 class="heading">Education</h1>
 			</div>
-			<hr>
 		</div>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit culpa. Eos alias officia adipisci dolores distinctio, magni minima provident officiis odit. Repudiandae fuga corrupti pariatur reiciendis nihil sint sapiente?</p>
+		<div class="row padding">
+			<div class="col-lg-6">
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi aut facere explicabo ex quos animi corrupti vitae fugiat eius perferendis maiores voluptatum, recusandae nisi aliquam, magni corporis eaque possimus distinctio!</p>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus blanditiis, fugit sunt harum magnam cum obcaecati ipsam enim debitis </p>
+			</div>
+			<div class="col-lg-6">
+				<div class="img-container">
+					<img src="img/desk.png" class="img-fluid">
+					<div class="img-text-overlay"><h2>Master Thesis</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, sed molestias pariatur, similique architecto et quasi vel dolores voluptatem</p></div>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -221,13 +261,12 @@
 <section id="skillzSection">
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col-12">
-				<h1 class="display-4 heading">Skillz</h1>
+			<div class="col-12 heading-row">
+				<h1 class="heading">Skillz</h1>
 			</div>
-			<hr>
 		</div>
 		<div class="col-12 text-left skillz-subtitle">
-			<h2>IT</h2>
+			<h4>IT</h4>
 		</div>
 		<div class="row blue-text skillz-score-content">
 			<div class="col-md-6">
@@ -249,7 +288,8 @@
 							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>						</span>
+							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
+						</span>
 					</li>
 					<li>
 						<span class="skillz-title">HTML(5)</span>
@@ -258,7 +298,8 @@
 							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>						</span>
+							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
+						</span>
 					</li>
 					<li>
 						<span class="skillz-title">JSON</span>
@@ -272,7 +313,6 @@
 					</li>
 				</ul>
 			</div>
-
 			<div class="col-md-6">
 				<ul class="no-bullets">
 					<li>
@@ -292,7 +332,8 @@
 							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>						</span>
+							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
+						</span>
 					</li>
 					<li>
 						<span class="skillz-title">Object Orientated Programming</span>
@@ -315,34 +356,89 @@
 					</li>
 				</ul>
 			</div>
+		</div> <!--  IT -->
+		<div class="col-12 text-left skillz-subtitle">
+			<h4>Languages</h4>
 		</div>
+		<div class="row blue-text skillz-score-content">
+			<div class="col-md-6">
+				<ul class="no-bullets">
+					<li>
+						<span class="skillz-title">German (Native)</span>
+						<span class="skillz-score">
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						</span>
+					</li>
+					<li>
+						<span class="skillz-title">English <a href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages#Common_reference_levels" target="_blank">(C2)</a></span>
+						<span class="skillz-score">
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-md-6">
+				<ul class="no-bullets">
+					<li>
+						<span class="skillz-title">French <a href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages#Common_reference_levels" target="_blank">(C2)</a></span>
+						<span class="skillz-score">
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						</span>
+					</li>
+					<li>
+						<span class="skillz-title">Italian <a href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages#Common_reference_levels" target="_blank">(A2)</a></span>
+						<span class="skillz-score">
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#D7F57D" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
+							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
+							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div> <!--  Languages -->
 	</div>
 </section>
 
 <!--- Connect -->
-<div class="container-fluid padding">
-	<div class="row padding text-center">
-		<div class="col-12">
-			<h2>Connect with me</h2>
-		</div>
-		<div class="col-12 social padding">
-			<a href="#"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-			<a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-			<a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
-			<a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-			<a href="#"><i class="fas fa-cube" aria-hidden="true"></i></a>
+<section id="connectSection">
+	<div class="container-fluid padding">
+		<div class="row padding text-center">
+			<div class="col-12 blue-text">
+				<h2>Connect with me</h2>
+			</div>
+			<div class="col-12 social padding">
+				<a href="#"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+				<a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+				<a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
+				<a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+				<a href="#"><i class="fas fa-cube" aria-hidden="true"></i></a>
+			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <!--- Footer -->
 <footer class="blue-background">
 <div class="container-fluid padding">
 	<div class="row text-center">
 		<div class="col-12">
-			<hr class="light">
 			<img src="img/logo_pic.png" height="60px" alt="profile-pic">
-			<p><i class="fas fa-envelope" aria-hidden="true"></i> s.montanari@gmx.ch</p>
+			<p><i class="fas fa-envelope" aria-hidden="true"></i> <a href = "mailto: test@email.com">test@email.com</a></p>
 		</div>
 	</div>
 </div>
@@ -385,12 +481,6 @@
 </body>
 </html>
 
-
-
-
-
-
-
 <!-- View in Browser: Drew's #1 Trending YouTube Tutorial
 <div class="youtube-tutorial">
 	<a href="http://w3n.link/bundle-bonus-playlist" target="_blank" style="cursor: pointer!important;">
@@ -398,5 +488,3 @@
   </a>
 </div>
  End View in Browser: Drew's #1 Trending YouTube Tutorial -->
-
-

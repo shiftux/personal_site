@@ -16,26 +16,40 @@
 --key-lime: #e6f9afff;
 */
 
-.html .body {
+html body {
   height: 100%;
   width: 100%;
   font: 'Poppins', 'Raleway';
   color: #222;
 }
+html {
+  scroll-behavior: smooth;
+}
+section {
+  padding-bottom: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+  scroll-margin-top: 2em;
+}
 .heading {
   font-family: 'Raleway';
   font-weight: 700;
+  font-size: 3.5rem;
+}
+.heading-row {
+  margin-top: 2em;
 }
 .blue-text {
   color: #18314fff;
 }
 .blue-background {
   background-color: #18314fff;
+  color: white;
 }
 
 /************************* Navbar **************************/
 #global-nav {
-  background-color: ;
+  background-color: #18314fff;
 }
 .navbar-nav li {
   padding-right: 20px;
@@ -45,6 +59,10 @@
 }
 
 /************************* Intro parallax **************************/
+#welcomeSection {
+  padding-left: 0;
+  padding-right: 0;
+}
 .welcome {
   height: 100%;
 }
@@ -92,9 +110,43 @@
   vertical-align: bottom;
 }
 
+/************************* About Me **************************/
+.aboutmeLi {
+  width: 90%;
+  padding-bottom: 1em;
+}
+.aboutmeKey {
+  width: 40%;
+  display: inline-block;
+}
+.aboutmeValue {
+  float: right;
+}
+.aboutme-img {
+  width: 90%;
+}
+#aboutmeSection img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1em;
+}
+#aboutmeSection .social {
+  width: 90%;
+  text-align: center;
+  padding-top: .5em;
+}
+#aboutmeSection .social a {
+  font-size: 2em;
+  padding: 0.5rem;
+}
 /************************* Projects **************************/
 #projectsSection {
-  color: #f5f5f5;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 /* Flipping Cards */
 .card-container {
@@ -123,12 +175,10 @@
 }
 
 /************************* Work & experience section **************************/
-#work {
+#workSection {
+  padding-left: 1em;
+  padding-right: 1em;
   padding-bottom: 5em;
-}
-#work .heading{
-  margin-top: 1.5em;
-  margin-bottom: .5em;
 }
 .timeline-hr {
   width: 30%;
@@ -188,6 +238,12 @@
 .container:hover .tl-flip-card {
   transform: rotateX(180deg);
 }
+.container.left:hover::before {
+  opacity: 0;
+}
+.container.right:hover::before {
+  opacity: 0;
+}
 /* Container around content */
 .container {
   padding: 10px 40px;
@@ -236,6 +292,7 @@
   border: medium solid #18314fff;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #18314fff;
+  transition: opacity 0.7s ease-in;
 }
 /* Add arrows to the right container (pointing left) */
 .right::before {
@@ -249,12 +306,39 @@
   border: medium solid #18314fff;
   border-width: 10px 10px 10px 0;
   border-color: transparent #18314fff transparent transparent;
+  transition: opacity 0.7s ease-in;
+}
+
+/************************* Education section **************************/
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.img-text-overlay {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.img-container img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-container:hover img {
+	opacity: .5;
 }
 
 /************************* skillz section **************************/
+#skillzSection {
+  padding-right: 0;
+  padding-left: 0;
+}
 .skillz-subtitle {
-  width: 75%;
-  left: 12.5%;
+  width: 80%;
+  left: 10%;
 }
 #skillzSection .col-md-6 {
   padding-top: 0;
@@ -262,8 +346,8 @@
   padding-right: 4%;
 }
 .skillz-score-content {
-  width: 75%;
-  margin-left: 12.5%;
+  width: 80%;
+  margin-left: 10%;
 }
 .no-bullets {
   list-style-type: none;
@@ -276,25 +360,25 @@
 .skillz-score {
   float: right;
 }
-.no-bullets li {
+#skillzSection .no-bullets li {
   transition: all .2s ease-in-out;
 }
-.no-bullets svg {
+#skillzSection .no-bullets svg {
   /* transition: width .2s ease-in-out; */
   transition: padding-right .2s ease-in-out;
 }
-.no-bullets li:hover {
+#skillzSection .no-bullets li:hover {
   background-color: #E2E8F2;
   border-radius: 3px;
   transform: scale(1.05);
 }
-.no-bullets li:hover svg {
+#skillzSection .no-bullets li:hover svg {
   transform: scale(1.3);
   margin-right: 3px;
 }
 
 /************************* connect section **************************/
-.social a {
+#connectSection .social a {
   font-size: 4em;
   padding: 3rem;
 }
@@ -315,9 +399,7 @@
 }
 
 /************************* footer **************************/
-footer {
-  color: #f5f5f5;
-}
+
 
 /*--- Media Queries for responsive design ---*/
 /*
