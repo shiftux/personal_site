@@ -21,6 +21,7 @@ html body {
   width: 100%;
   font: 'Poppins', 'Raleway';
   color: #222;
+  text-align: justify;
 }
 html {
   scroll-behavior: smooth;
@@ -111,6 +112,10 @@ section {
 }
 
 /************************* About Me **************************/
+#aboutmeSection {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .aboutmeLi {
   width: 90%;
   padding-bottom: 1em;
@@ -140,7 +145,7 @@ section {
   padding-top: .5em;
 }
 #aboutmeSection .social a {
-  font-size: 2em;
+  font-size: 1.6em;
   padding: 0.5rem;
 }
 /************************* Projects **************************/
@@ -179,6 +184,8 @@ section {
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 5em;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .timeline-hr {
   width: 30%;
@@ -310,6 +317,10 @@ section {
 }
 
 /************************* Education section **************************/
+#educationSection .row {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .img-container {
   position: relative;
   text-align: center;
@@ -383,7 +394,7 @@ section {
   padding: 3rem;
 }
 .fa-envelope {
-  color: #b3b3b3;
+  color: #18314fff;
 }
 .fa-linkedin {
   color: #2867B2;
@@ -420,7 +431,22 @@ section {
   Extra (xl) large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) { ... }
 */
+@media (max-width: 1200px) {
+  #aboutmeSection .col-lg-4.col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #aboutmeSection .social a {
+    padding: 0.2rem;
+  }
+}
 @media (max-width: 992px) {
+  .aboutme-img img {
+    width: 60%;
+  }
+  #aboutmeSection .social a {
+    padding: 0.5rem;
+  }
   .social a {
     font-size: 3.5em;
     padding: 2rem;
@@ -445,6 +471,15 @@ section {
   }
 }
 @media (max-width: 768px) {
+  .aboutme-img img {
+    width: 40%;
+  }
+  #projectsSection .container-fluid {
+    width: 80%;
+  }
+  #projectsSection .container-fluid {
+    width: 90%;
+  }
   .social a {
     font-size: 3em;
     padding: 1.5rem;
