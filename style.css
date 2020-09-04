@@ -47,6 +47,10 @@ section {
   background-color: #18314fff;
   color: white;
 }
+.btn-primary {
+  background-color: #18314fff;
+  border-color: #18314fff;
+}
 
 /************************* Navbar **************************/
 #global-nav {
@@ -152,6 +156,29 @@ section {
 #projectsSection {
   padding-left: 1em;
   padding-right: 1em;
+}
+#projectsSection ul {
+  list-style: none; /* Remove default bullets */
+}
+#projectsSection ul li::before {
+  content: "\2022";
+  color: #D7F57D;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.card.front .heading {
+  background-color: rgba(255, 255, 255, .6);
+  width: auto;
+  border-radius: 3px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.card.back {
+  padding: 2em;
 }
 /* Flipping Cards */
 .card-container {
@@ -328,18 +355,27 @@ section {
 }
 .img-text-overlay {
   position: absolute;
-  width: 90%;
-  top: 50%;
+  width: 80%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, 0);
 }
 .img-container img {
 	opacity: 1;
 	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  border-radius: 5px;
 }
 .img-container:hover img {
 	opacity: .5;
+}
+#educationSection .col-lg-6 h2{
+  text-align: center;
+}
+#educationSection table {
+  width:90%;
+  position: sticky;
+  left: 50%;
 }
 
 /************************* skillz section **************************/
@@ -439,6 +475,9 @@ section {
   #aboutmeSection .social a {
     padding: 0.2rem;
   }
+  #educationSection .img-text-overlay {
+    top: 20%;
+  }
 }
 @media (max-width: 992px) {
   .aboutme-img img {
@@ -468,6 +507,9 @@ section {
   .skillz-score-content {
     width: 90%;
     margin-left: 5%;
+  }
+  #educationSection .img-text-overlay {
+    top: 50%;
   }
 }
 @media (max-width: 768px) {
@@ -528,6 +570,9 @@ section {
   .left::after, .right::after {
     left: 18px;
   }
+  #educationSection .img-text-overlay {
+    top: 30%;
+  }
 }
 @media (max-width: 576px) {
   .social a {
@@ -546,6 +591,9 @@ section {
   }
   .welcome h1:after, .welcome h1:before {
     visibility: hidden;
+  }
+  #educationSection .img-text-overlay {
+    top: 10%;
   }
 }
 
