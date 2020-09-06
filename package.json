@@ -1,0 +1,27 @@
+{
+  "name": "personal_website",
+  "version": "0.1.0",
+  "description": "Sandro Montanari's personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiftux/personal_site.git"
+  },
+  "keywords": [
+    "sandro",
+    "montanari"
+  ],
+  "author": "sandro montanari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiftux/personal_site/issues"
+  },
+  "homepage": "sandromontanari.com",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

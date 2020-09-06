@@ -361,7 +361,7 @@ section {
   transform: translate(-50%, 0);
 }
 .img-container img {
-	opacity: 1;
+	opacity: 0.8;
 	-webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
   border-radius: 5px;
