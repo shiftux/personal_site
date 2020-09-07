@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use(express.static('public'))
-app.use('/static', express.static('public/projects'))
+app.use('/projects', express.static('public/projects'))
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
