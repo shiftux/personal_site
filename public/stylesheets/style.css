@@ -80,7 +80,7 @@ section {
   background-position: 50% 50%;
 }
 .parallaxsection {
-  background-image: url('img/bg_sandro.jpg');
+  background-image: url('../images/bg_sandro.jpg');
   height: 100%;
 }
 .jumbotron{
