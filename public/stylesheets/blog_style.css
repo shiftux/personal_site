@@ -24,6 +24,10 @@
     margin-right: auto;
 }
 
+hr {
+    border-top: 3px solid #18314fff;
+}
+
 @media (max-width: 1200px) {
     .view-width {
         width: 80%;
@@ -47,5 +51,11 @@
     }
 }
 @media (max-width: 576px) {
-
+    .view-width {
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+        position: relative;
+        left: 0;
+    }
 }

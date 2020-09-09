@@ -1,13 +1,17 @@
-change navbar type after scroll
-
-education section
+change footer
 
 contact mail
 captcha
 get my CV
-maybe hide arrows during animation
+
+change window onload to use promises, for active nav sections
+
+add hosting section to website
+maybe add prometheus and a load test demo on k8s
 
 clean up github
 work on linkedin
 make a shiftux youtube channel
 add weightlifter to thingiverse
+
+patron page

@@ -13,35 +13,37 @@
 <section id="navbarSection" style="padding:0">
 	<nav id="global-nav" class="navbar navbar-expand-md navbar-dark fixed-top blue-background">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#aboutmeSection"><img height="50px" src="http://localhost:3000/images/logo_pic.png"></a>
+			<a class="navbar-brand" href="/index.html#aboutmeSection"><img height="50px" src="http://localhost:3000/images/logo_pic.png"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="navbar-item">
-						<a class="nav-link" href="#aboutmeSection">About Me</a>
+						<a class="nav-link" href="/index.html#aboutmeSection">About Me</a>
 					</li>
-					<!-- <li class="nav-item dropdown">
+					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#projects" role="button"
 							aria-haspopup="true" aria-expanded="false">Projects</a>
 						<div class="dropdown-menu bg-light">
-							<a class="dropdown-item" href="#">IT</a>
-							<a class="dropdown-item" href="#">Making & 3D</a>
-							<a class="dropdown-item" href="#">Travel</a>
+							<a class="dropdown-item" href="/index.html#projectsSection">Projects Home</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="/it_projects/index.html">IT</a>
+							<a class="dropdown-item" href="/making_projects/index.html">Making & 3D</a>
+							<a class="dropdown-item" href="/sports_projects/index.html">Sports & Pictures</a>
 						</div>
+					</li>
+					<!-- <li class="navbar-item">
+						<a class="nav-link" id="projectNavLink" href="#projectsSection">Projects</a>
 					</li> -->
 					<li class="navbar-item">
-						<a class="nav-link" href="#projectsSection">Projects</a>
+						<a class="nav-link" href="/index.html#workSection">Work & Experience</a>
 					</li>
 					<li class="navbar-item">
-						<a class="nav-link" href="#workSection">Work & Experience</a>
+						<a class="nav-link" href="/index.html#skillzSection">Skillz</a>
 					</li>
 					<li class="navbar-item">
-						<a class="nav-link" href="#skillzSection">Skillz</a>
-					</li>
-					<li class="navbar-item">
-						<a class="nav-link" href="#connectSection">Connect</a>
+						<a class="nav-link" href="/index.html#connectSection">Connect</a>
 					</li>
 				</ul>
 			</div>
@@ -119,9 +121,9 @@
 			<div class="col-md-4 card-container">
 				<div class="flip-card">
 					<div class="card front">
-						<img src="images/it_projects.jpeg" class="card-img" alt="IT">
+						<img src="images/projects_it.jpeg" class="card-img" alt="IT">
 						<div class="card-img-overlay">
-							<h1 class="card-title text-center heading blue-text">IT</h1>
+							<h1 class="text-center heading blue-text">IT</h1>
 						  </div>
 					</div>
 					<div class="card back bg-light blue-text">
@@ -129,22 +131,22 @@
 						<p>
 							<ul>
 								<li>This website and its hosting and load balancing</li>
-								<li>A CrossFit management platform I built and am hosting</li>
+								<li>A CrossFit management platform I built and am hosting in production</li>
 								<li>My (almost fully) automated home</li>
 								<li>A blockchain delegate experience</li>
 								<li>A brain-teasing Android app I wrote</li>
 							</ul>
 						</p>
-						<button type="button" class="btn btn-primary">Show me</button>
+						<a class="btn btn-primary" href="/it_projects/index.html" role="button">Show me</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 card-container">
 				<div class="flip-card">
 					<div class="card front">
-						<img src="images/making_projects.jpeg" class="card-img" alt="IT">
+						<img src="images/projects_making.jpeg" class="card-img" alt="IT">
 						<div class="card-img-overlay">
-							<h1 class="card-title text-center heading blue-text">Making</h1>
+							<h1 class="text-center heading blue-text">Making</h1>
 						  </div>
 					</div>
 					<div class="card back bg-light blue-text">
@@ -159,16 +161,16 @@
 								<li>A couple of 3D printed designs</li>
 							</ul>
 						</p>
-						<button type="button" class="btn btn-primary">Show me</button>
+						<a class="btn btn-primary" href="/making_projects/index.html" role="button">Show me</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 card-container">
 				<div class="flip-card">
 					<div class="card front">
-						<img src="images/sports_projects.JPG" class="card-img" alt="IT">
+						<img src="images/projects_sports.JPG" class="card-img" alt="IT">
 						<div class="card-img-overlay">
-							<h1 class="card-title text-center heading blue-text">Sports & Pictures</h1>
+							<h1 class="text-center heading blue-text">Sports & Pictures</h1>
 						  </div>
 					</div>
 					<div class="card back bg-light blue-text">
@@ -181,7 +183,7 @@
 								<li>Some pictures & Photoshop experiments</li>
 							</ul>
 						</p>
-						<button type="button" class="btn btn-primary">Show me</button>
+						<a class="btn btn-primary" href="/sports_projects/index.html" role="button">Show me</a>
 					</div>
 				</div>
 			</div>
@@ -205,7 +207,7 @@
 			<div class="container left">
 				<div class="tl-flip-card">
 					<div class="tl-front text-white blue-background text-left">
-						<h2><img src="images/inpher_logo.png" width="50%"></img></h2>
+						<h2><img src="images/logo_inpher.png" width="50%"></img></h2>
 						<p>April 2018 - present</p>
 						<p><b>Director of Product</b></p>
 						<p><i>New York, USA / Lausanne, CH</i></p>
@@ -227,7 +229,7 @@
 			<div class="container right">
 				<div class="tl-flip-card">
 					<div class="tl-front text-white blue-background text-left">
-						<h2><img src="images/Swisscom_logo_white.png" width="50%"></img></h2>
+						<h2><img src="images/logo_white_swisscom.png" width="50%"></img></h2>
 						<p>December 2016 - April 2018</p>
 						<p><b>Developer / Product Manager</b></p>
 						<p><i>Berne, CH</i></p>
@@ -247,7 +249,7 @@
 			<div class="container left">
 				<div class="tl-flip-card">
 					<div class="tl-front text-white blue-background text-left">
-						<h2><img src="images/Swisscom_logo_white.png" width="50%"></img></h2>
+						<h2><img src="images/logo_white_swisscom.png" width="50%"></img></h2>
 						<p>October 2013 - December 2016</p>
 						<p><b>Developer / Product Manager</b></p>
 						<p><i>Berne, CH</i></p>
@@ -265,7 +267,7 @@
 			<div class="container right">
 				<div class="tl-flip-card">
 					<div class="tl-front text-white blue-background text-left">
-						<h2><img src="images/Swisscom_logo_white.png" width="50%"></img></h2>
+						<h2><img src="images/logo_white_swisscom.png" width="50%"></img></h2>
 						<p>October 2012 - October 2013</p>
 						<p><b>Graduate Trainee Program</b></p>
 						<p><i>Berne, CH / Palo Alto, USA</i></p>
@@ -291,7 +293,7 @@
 			<div class="container left">
 				<div class="tl-flip-card">
 					<div class="tl-front text-white blue-background text-left">
-						<h2><img src="images/asyril_logo.png" width="50%"></img></h2>
+						<h2><img src="images/logo_asyril.png" width="50%"></img></h2>
 						<p>February 2012 - September 2012</p>
 						<p><b>Industrial Master Thesis</b></p>
 						<p><i>Villaz-St-Pierre, CH</i></p>
@@ -319,7 +321,7 @@
 		</div>
 		<div class="row padding">
 			<div class="col-lg-6">
-				<h2><img src="images/epfl_logo.png" width="20%"></img></h2>
+				<h2><img src="images/logo_epfl.png" width="20%"></img></h2>
 				<table>
 					<tr>
 					  <td>2010 - 2012</td>
@@ -527,15 +529,15 @@
 </section>
 
 <!--- Footer -->
-<footer class="blue-background">
-<div class="container-fluid padding">
-	<div class="row text-center">
-		<div class="col-12">
-			<img src="images/logo_pic.png" height="60px" alt="profile-pic">
-			<p><i class="fas fa-envelope" aria-hidden="true"></i> <a href = "mailto: test@email.com">test@email.com</a></p>
+<footer id="footer" class="blue-background">
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-12">
+				<img src="http://localhost:3000/images/logo_pic.png" height="60px" alt="profile-pic">
+				<p><i class="fas fa-envelope" aria-hidden="true"></i> <a href = "mailto: test@email.com">test@email.com</a></p>
+			</div>
 		</div>
 	</div>
-</div>
 </footer>
 
 <!--- Bootstrap scripts inclusions -->
