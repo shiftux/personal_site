@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- for mobile sites -->
+	<title>Welcome to Sandro's site</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="../stylesheets/style.css" rel="stylesheet">
+	<link href="../stylesheets/blog_style.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<section id="navbarSection" style="padding-bottom: 100px;"></section>
+
+<section id="introImageSection">
+        <div id="introCarousel" class="carousel slide" data-ride="carousel">
+            <!-- <ul class="carousel-indicators">
+                <li data-target="#introCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#introCarousel" data-slide-to="1"></li>
+                <li data-target="#introCarousel" data-slide-to="2"></li>
+            </ul> -->
+            <div class="carousel-inner active">
+                <div class="carousel-item active">
+                    <img src="../images/crypto_carousel_1.jpeg">
+                </div>
+                <!-- <div class="carousel-item">
+                    <img src="../images/cftb-carousel-2.jpeg">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/cftb-carousel-3.jpeg">
+                </div> -->
+            </div>
+    </div>
+</section>
+
+<section class="blue-text view-width">
+    <div class="container-fluid padding blue-text">
+		<div class="row text-center">
+			<div class="col-12 heading-row">
+				<h1 class="heading">Being a link in the blockchain for a short while</h1>
+			</div>
+		</div>
+    </div>
+    <p><small>Published September 2020</small></p>
+
+    <h4>Introduction</h4>
+    <p>
+        Remember 2017 and the complete hype around blockchain and cryptocurrencies? People had heard about the Bitcoin for the first time and it dominated the media and social media. It got to a point where even our parents started investing in bitcoin (which was the definite sign for everyone else to sell). Next to the BTC there were a whole bunch of alt-coins (or in most cases actually rather <i class="fas fa-poo"></i>-coins, as they are called by crypto traders, since by now they are worth... well that...). <br>
+        It was also the time of all the ICOs (initial coin offerings, which is similar to an IPO, initial public offering, in the classic stock trading world). No one had ever believed that the Bitcoin would reach the prices it did at that time but when it did common belief was that alt-coins could perform just as well. Everyone with a decent idea wanted a piece of the sheer unlimited readiness of the masses to invest in the crypto market and thus people decided to launch coins by the hundreds. And the masses invested. Often they were great ideas with great people behind the projects. But the enthusiasm and the performance was only good as long as the BTC did well. When it hit its peak at around a 20'000$ value, it crashed. And with it all alt-coins. And all of a sudden all the great ideas and great projects were worth much less, their founder's enthusiasm vanished and the projects slowly but surely died, burying the investments of the masses with them. Obviously, next to the cool projects and great ides there were also a couple of smart con artists who pretended to have great ideas, but essentially just focussed on ripping off the masses willing to invest in anything crypto-related.
+    </p>
+    <h4>Me in the chain</h4>
+    <p>
+        I was sort of a victim of what I described above. I had a friend who minded a proof of stake coin (<a href="https://www.exodus.io/blog/proof-of-work-vs-proof-of-stake/">explanation of proof of work vs proof of stake</a>) that was doing quite well and there was a new one being announced using a similar setup and chain. The project sounded cool and interesting and actually had a pretty engaged and capable team of developers and business developers behind it. And we were hyped by all that crypto action... So with another friend we decided to stake a proof of stake node in the chain.
+    </p>
+    <h4>The project</h4>
+    <p>
+        Essentially the developers provided installers and a setup for a delegate node (equivalent to a mining node in a proof-of-work chain) in the chain and our task was to make sure it was up with pretty good uptime. So I needed to build and maintain a server, install the delegate application and keep the server running. And, of course, send them a lot of money, real world money. Enough money that the amount of exchanged cryptocurrency in question would suffice to keep our delegate ranking in the limited number of active delegates (only 101 nodes were allowed to mine, but over 1'000 nodes were setup). The goal was to have at least one node in the top 101 so that we could mine more crypto and thus further solidify our position in the top 101 as well as quickly get rich and get that lambo!
+    </p>
+    <p>
+        <b>How to stay in the top 101</b><br>
+        Delegates were voted to be in the top 101 and everyone who possessed the coin was able to vote (you didn't need to have a delegate, just own some of the currency, which could be traded on a couple of platforms). The more coins you owned, the more weight your vote had. Every participant was able to vote for 50 delegates. So in the end it became a game of diplomacy and strategic alliances. You wanted the big fish to vote for you and in turn get a place in the top 101. The big fish were happy to do that as long as you payed them tribute (part of what you mined). Another way to assure a place in the top 101 was to be part of a voting group, those were up to 50 people who gave each other their votes, if all participants in the voting group had a decent amount of coins, the end result would almost guarantee your place amongst the glorious 101.
+    </p>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <img src="../images/crypto_delegate_rank.png" width="100%">
+            <p class="caption">The rank and performance of our node at its peak. The rank corresponds to the position in the 101, the productivity was equivalent to the uptime and the approval measured how many of all possible votes voted for you.</p>
+        </div>
+    </div>
+    <p>
+        <b>Setup and uptime</b><br>
+        I created a couple of Ansible scripts to setup a few nodes quickly and then developed a couple of monitoring and switching scrips that would switch the active node over to a standby node in case the active one would have a problem. So we were sure to always have a node ready to mine, when it was our turn to mine a block (once every 505 minutes).
+    </p>
+    <h4>Conclusion</h4>
+    <p>
+        In retrospect I must admit we were victims of the crypto hype. The coin is worth next to nothing by today and the daily trading volume is extremely low, so one would not even be able to sell one's holdings today... <br>
+        Nevertheless there are positive points to be taken from the experience: the project had many parts to it, I got interested and learned a lot about blockchains, the technology, the application fields, consensus mechanisms and all amazing as well as painful things that are part of the blockchain ecosystem. I built a 100% uptime system and extended my devops skills and I've learned how to play the game of staked coins, meaning how to get allies and defend your space in the top tier of miners. It was a fun and exciting project while it lasted. But as so many other coin tales, it did not last long... And we lost money, too much in all honesty.</p>
+</section>
+
+<!--- Footer -->
+<footer id="footer" class="blue-background"></footer>
+
+<!--- Bootstrap scripts inclusions -->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha384-/LjQZzcpTzaYn7qWqRIWYC5l8FWEZ2bIHIz0D73Uzba4pShEcdLdZyZkI4Kv676E" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg></script> <!-- for social media icons -->
+
+<!-- include navbar -->
+<script>
+    window.onload = function () {
+        $("#navbarSection").load("../index.html #navbarSection");
+        $("#footer").load("../index.html #footer");    }
+</script>
+
+</body>
+</html>

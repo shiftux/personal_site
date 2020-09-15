@@ -43,36 +43,49 @@
     </div>
     <p><small>Published September 2020</small></p>
 
-
-    <h3 class="text-center">Stay tuned for more....</h3>
-    <!-- <div class="row">
-        <div class="col-lg-3">
-            <img src="../images/cftb_tom.png" width="100%">
-        </div>
-        <div class="col-lg-9">
-            <p><i>"The members appreciated the new login system from the beginning on. It's easy to use, simple to understand and
-                    most of all stable. Managing the memberships of all athletes has become much simpler and thanks to the new app
-                    we have a much better overview of our classes and members."</i> Tom Krebs, owner and head coach</p>
-        </div>
-    </div>
--->
+    <h4>Motivation</h4>
+    <p>
+        Back in 2012 my then girlfriend offered me the <a href="https://boardgamegeek.com/boardgame/51/ricochet-robots">Ricochet Robots board game</a>. I enjoyed it a lot, even though she used to beat me at it. At the time I was just starting out in my professional career and was able to join a trainee program, where I got to do projects unrelated to my engineering background (like negotiate telecom inter-operator tariffs or working from the Silicon Valley hub and scouting for new tech). They were awesome projects and I learned so much doing them. However, them being focussed a bit more on the business side, I lacked a bit of engineering content in my life. So I figured I would learn about Android development and would implement an app version of our beloved game in my free time.
+    </p>
 
     <hr class="blue-background">
     <div class="row">
         <div class="col-sm-12 text-center">
-            <h4>Get it here on the Android store</h4>
-            <a class="btn btn-primary" href="#" role="button">Get it</a>
+            <h4>Get it on the Android store</h4>
+            <a href='https://play.google.com/store/apps/details?id=shifty.ricochet.robots&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width="200px" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
         </div>
     </div>
     <hr class="blue-background">
+
+    <h4>The app</h4>
+    <p>
+        Make robots reach their goal. The tricky part is that once a robot is set in motion it moves until it bumps into a wall or a fellow robot, it cannot stop on its own. Every robot can move in four directions, horizontally and vertically, diagonal movements are not allowed. In order to make your way to the target you need to position fellow robots so that the target seeking robot can bounce off of its helpers. There is a near infinite possibility of movements but the trick is to find a shorter one than your adverse player.
+    </p>
+    <p>
+        <b>Multiplayer</b><br>
+        During the play of the game no player actually moves a robot. You find the shortest path in your head and then announce the number of moves you need to reach the target. This means that whoever has a view on the board, he or she can come up with a solution, making the game suitable for basically an unbounded amount of players. Whoever finds a solution announces the number of required moves. Then a 30 second timer is started to give everyone a final chance at a solution and at the end the player with the shortest solution shows the moves.
+    </p>
 
     <div class="row">
         <div class="col-sm-12 text-center">
             <img src="../images/ricochetrobots_screenshots.png" width="100%">
-            <p>Left: Main menu screenshot. Right: in-game screenshot</p>
+            <p class="caption">Left: Main menu screenshot. Right: in-game screenshot</p>
         </div>
     </div>
-    <!-- <p> -->
+
+    <h4>Building it</h4>
+    <p>
+        As I had some training in Java the learning was pretty straightforward. I was following a couple of state of the art guides back then [1],[2] to help me familiarize myself with the Android SDK. I remember the most challenging thing to get right was the interpretation of the finger movements. Should you react more to a flick or rather to a drag, when is it just a touch or was it flicked, etc. On a handled device and especially in gesture controlled games it's important to get the interaction right, so it feels natural to be playing it.
+    </p>
+
+    <h4>Status and future work</h4>
+    <p>
+        This was back in 2012, it was also back on Android version 4, Ice Cream Sandwich. Menu dialogues were black and white, memory on your phone was something like 512MB (I was an enthusiastic user of the HTC Desire back then) and consequently animations and graphics in apps were simpler. If you play the app today, you will notice that. It would benefit from a graphic overhaul to bring it to 2020ies standard. But more interestingly I'd like to tackle integrating a solver for it, which is a pretty complex problem mathematically. If I found the time to work on it a bit again...
+    </p> <br>
+    <p><small>
+        [1] Reto Meier - Professional Android Application Development, Wrox <br>
+        [2] Ed Burnette - Hello Android, Introducing Google's mobile development platform, The pragmatic programmers, third edition.
+    </small></p>
 
 </section>
 

@@ -44,18 +44,7 @@
     <p><small>Published September 2020</small></p>
     <h4>Motivation</h4>
     <p>
-        For quite a while I was a bit of a CrossFit fanatic and used to go to the box at around 4 times per week. There was
-        a great community and the
-        workouts hit the spot of what I needed in terms of strength and cardio. The only painful part of it was the sign up
-        process for the classes.
-        There was this Doodle sheet where you had to check your name at the date and time you were planning to go. Now
-        Doodle is a great tool for
-        date finding and consensus finding, but if you regularly have to load a grid of around 250 members and 2 weeks full
-        of classes it is not the
-        best-suited tool for the task, it's too slow and the scrolling and finding is just too painful... So I decided to
-        write an app that would allow
-        Tom, the owner, to put his classes online and have people sign-up for classes or go on a wait list if the class was
-        booked. That was back in 2017, and it is still running.
+        For quite a while I was a bit of a CrossFit fanatic and used to go to the box at around 4 times per week. There was a great community and the workouts hit the spot of what I needed in terms of strength and cardio. The only painful part of it was the sign up process for the classes. There was this Doodle sheet where you had to check your name at the date and time you were planning to go. Now Doodle is a great tool for date finding and consensus finding, but if you regularly have to load a grid of around 250 members and 2 weeks full of classes it is not the best-suited tool for the task, it's too slow and the scrolling and finding is just too painful... So I decided to write an app that would allow Tom, the owner, to put his classes online and have people sign-up for classes or go on a wait list if the class was booked. That was back in 2017, and today it is still running.
     </p>
     <h4>The app</h4>
     <b>Roles</b><br>
@@ -131,7 +120,7 @@
     <div class="row">
         <div class="col-sm-12 text-center">
             <img src="../images/cftb_stats.png" width="100%">
-            <p>Example of statistics presented to the coaches</p>
+            <p class="caption">Example of statistics presented to the coaches</p>
         </div>
     </div>
     <p>
@@ -157,6 +146,10 @@
         and maintenance costs low. And so far in the over 3 years of the app running, it had never failed.
     </p>
     <p>
+        <b>Testing</b><br>
+        Writing most of the code for this app in JavaScript, I chose Mocha as the testing framework. The coverage of my tests in this app is not as extensive as I would like it to be, but the essential is there.
+    </p>
+    <p>
         <b>Monitoring</b><br>
         As there are only 3 components running and the resource consumption of the whole application is extremely low, the
         monitoring of it all is relatively simple as well. I am using uptime robot to alert me if the service is up, this
@@ -168,7 +161,7 @@
     <div class="row">
         <div class="col-sm-12 text-center">
             <img src="../images/cftb_uptime.png" width="100%">
-            <p>Screenshot of the uptime graph on uptimerobot.com</p>
+            <p class="caption">Screenshot of the uptime graph on uptimerobot.com</p>
         </div>
     </div>
     <h4>Hiccups and learnings</h4>
@@ -190,13 +183,8 @@
     </p>
     <h4>Conclusion</h4>
     <p>
-        In terms of high availability design and also in terms of monitoring there would be some additional work required
-        for an app that would scale beyond the couple of athlete's at Tom's Box. So from a full-scale devops perspective
-        it's a rather simple application. Nevertheless it has been running for over 3 years without any major issues (that I
-        didn't brin on myself), so the pragmatic approach has proven resilient enough for the given requirements. <br>
-        The whole experience was a great exercise to learn how to build, operate and maintain a hosted web application. It
-        is still running, I learned a lot, Tom, the manager, as well as the community are enjoying using it. All in a
-        success!
+        In terms of high availability design and also in terms of monitoring there would be some additional work required for an app that would scale beyond the couple of athlete's at Tom's Box. So from a full-scale devops perspective it's a rather simple application. Nevertheless it has been running for over 3 years without any major issues (that I didn't brin on myself), so the pragmatic approach has proven resilient enough for the given requirements. <br>
+        The whole experience was a great exercise to learn how to build, operate and maintain a hosted web application. It is still running, I learned a lot, Tom, the manager, as well as the community are enjoying using it. All in a success!
     </p>
 </section>
 

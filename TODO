@@ -9,6 +9,8 @@ change window onload to use promises, for active nav sections
 add hosting section to website
 maybe add prometheus and a load test demo on k8s
 
+talk about testing
+
 clean up github
 work on linkedin
 make a shiftux youtube channel
