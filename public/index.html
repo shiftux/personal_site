@@ -118,13 +118,10 @@
 
 	<div class="container-fluid padding">
 		<div class="row padding">
-			<div class="col-md-4 card-container">
+			<div class="col-lg-4 col-md-6 card-container">
 				<div class="flip-card">
 					<div class="card front">
 						<img src="images/projects_it.jpeg" class="card-img" alt="IT">
-						<div class="card-img-overlay">
-							<h1 class="text-center heading blue-text">IT</h1>
-						  </div>
 					</div>
 					<div class="card back bg-light blue-text">
 						<h4>Learn about my IT projects, featured are:</h4>
@@ -140,14 +137,14 @@
 						<a class="btn btn-primary" href="/it_projects/index.html" role="button">Show me</a>
 					</div>
 				</div>
+				<div>
+					<h1 class="text-center heading">IT</h1>
+				</div>
 			</div>
-			<div class="col-md-4 card-container">
+			<div class="col-lg-4 col-md-6 card-container">
 				<div class="flip-card">
 					<div class="card front">
 						<img src="images/projects_making.jpeg" class="card-img" alt="IT">
-						<div class="card-img-overlay">
-							<h1 class="text-center heading blue-text">Making</h1>
-						  </div>
 					</div>
 					<div class="card back bg-light blue-text">
 						<h4>I enjoy making things, let me show you a couple of projects:</h4>
@@ -164,14 +161,14 @@
 						<a class="btn btn-primary" href="/making_projects/index.html" role="button">Show me</a>
 					</div>
 				</div>
+				<div>
+					<h1 class="text-center heading">Making</h1>
+				</div>
 			</div>
-			<div class="col-md-4 card-container">
+			<div class="col-lg-4 col-md-6 card-container">
 				<div class="flip-card">
 					<div class="card front">
 						<img src="images/projects_sports.JPG" class="card-img" alt="IT">
-						<div class="card-img-overlay">
-							<h1 class="text-center heading blue-text">Sports & Pictures</h1>
-						  </div>
 					</div>
 					<div class="card back bg-light blue-text">
 						<h4>I enjoy sporty challenges and some fiddling with pictures</h4>
@@ -185,6 +182,9 @@
 						</p>
 						<a class="btn btn-primary" href="/sports_projects/index.html" role="button">Show me</a>
 					</div>
+				</div>
+				<div>
+					<h1 class="text-center heading">Sports & Foto</h1>
 				</div>
 			</div>
 		</div>
@@ -205,75 +205,93 @@
 		<hr class="timeline-hr">
 		<div class="timeline">
 			<div class="container left">
-				<div class="tl-flip-card">
-					<div class="tl-front text-white blue-background text-left">
+				<div id="tlInpher" class="tl-flip-card">
+					<div class="card-side tl-front text-white blue-background text-left">
 						<h2><img src="images/logo_inpher.png" width="50%"></img></h2>
 						<p>April 2018 - present</p>
 						<p><b>Director of Product</b></p>
 						<p><i>New York, USA / Lausanne, CH</i></p>
 						<p>Startup, Privacy Preserving Machine Learning, Cryptography</p>
 						<p>Train and use distributed models without learning anything about the secret distributed input data.</p>
+						<div class="button-div text-right">
+							<button id="inpherDetailsButton" class="flipButton btn btn-secondary">Details</button>
+						</div>
 					</div>
-					<div class="tl-back blue-text">
+					<div class="card-side tl-back blue-text">
 						<p><b>Role: </b>Fifth member to join, started out coding on the product (still doing that), now owning the product
 							development roadmap, <b>line manager</b> and <b>key account manager</b>, member of the <b>executive team,</b> reporting to the CEO. Spent a year working
 							in the <b>New York</b> office.</p>
 						<p><b>Responsibilities: </b>Executive duties, owning product roadmap, managing processes and agile development of the whole
-							implementation team. Team lead of product management team. Sales, contract execution, POCs and production rollout at client’s sites
-							worldwide.</p>
-						<p><b>Achievements:</b> Transformed a research-based library to a usable and desired product, now integrated at
+							implementation team. Team lead of product management team. Sales, contract execution, POCs and <b>production rollout at client’s sites worldwide</b>.</p>
+						<p><b>Achievements:</b> Transformed a research-based library to a <b>industry-grade product</b>, now integrated at
 							customer’s sites. Managing the companies largest production customer account.</p>
+						<div class="button-div text-right">
+							<button id="inpherLessButton" class="flipButton btn btn-secondary">Less</button>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="container right">
-				<div class="tl-flip-card">
-					<div class="tl-front text-white blue-background text-left">
+				<div id="tlSwisscomBigD" class="tl-flip-card">
+					<div class="card-side tl-front text-white blue-background text-left">
 						<h2><img src="images/logo_white_swisscom.png" width="50%"></img></h2>
 						<p>December 2016 - April 2018</p>
 						<p><b>Developer / Product Manager</b></p>
 						<p><i>Berne, CH</i></p>
 						<p>Swisscom Big Data Platform</p>
 						<p>Design, build and maintain the Swisscom Big Data Platform, ingest data and manage stakeholders.</p>
+						<div class="button-div text-right">
+							<button id="SwisscomBigDDetailsButton" class="flipButton btn btn-secondary">Details</button>
+						</div>
 					</div>
-					<div class="tl-back blue-text">
-						<p><b>Role: </b>There was a small rack running a Hadoop cluster and some try-outs with Kafka. People liked it, so we
-							made it the <b>main data lake for the largest Swiss telecom provider</b>.</p>
-						<p><b>Responsibilities:</b> Roadmap, agile development process, stakeholder management, customer interactions, software development,
-							24/7 on-call duties.</p>
+					<div class="card-side tl-back blue-text">
+						<p><b>Role: </b>There was a small rack running a Hadoop cluster and some try-outs with Kafka. People liked it, so we made it the <b>main data lake for the largest Swiss telecom provider</b>.</p>
+						<p><b>Responsibilities:</b> Roadmap, agile development process, stakeholder management, customer interactions, software development, <b>24/7 on-call</b> duties.</p>
 						<p><b>Achievements:</b> Bringing the product <b>from an extended proof of concept state to a mature enterprise platform</b>,
-							establishing agile development processes and customer interaction processes.</p>
+							establishing agile development processes and customer interaction processes.
+						</p>
+						<div class="button-div text-right">
+							<button id="SwisscomBigDLessButton" class="flipButton btn btn-secondary">Less</button>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="container left">
-				<div class="tl-flip-card">
-					<div class="tl-front text-white blue-background text-left">
+				<div id="tlSwisscomRims" class="tl-flip-card">
+					<div class="card-side tl-front text-white blue-background text-left">
 						<h2><img src="images/logo_white_swisscom.png" width="50%"></img></h2>
 						<p>October 2013 - December 2016</p>
 						<p><b>Developer / Product Manager</b></p>
 						<p><i>Berne, CH</i></p>
 						<p>Remote Infrastructure Management Systems</p>
 						<p>Software development, cloud-based remote IT-infrastructure management system</p>
+						<div class="button-div text-right">
+							<button id="SwisscomRimsDetailsButton" class="flipButton btn btn-secondary">Details</button>
+						</div>
 					</div>
-					<div class="tl-back blue-text">
+					<div class="card-side tl-back blue-text">
 						<p><b>Role: </b>Develop an <b>in-house built, cloud-based</b> remote management solution for IT infrastructure using mostly open source technologies. Monitoring,
 							incident management and alarming for your custom hardware out of the cloud.</p>
-						<p><b>Achievements:</b> We brought bleeding edge tech into the company, I am still in touch
-							with friends from there and what we built back then <b>is still being used</b>, that is the achievement.</p>
+						<p><b>Achievements:</b> Bringing bleeding edge tech into the company, developed solution <b>is still being used</b> to date.</p>
+						<div class="button-div text-right">
+							<button id="SwisscomRimsLessButton" class="flipButton btn btn-secondary">Less</button>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="container right">
-				<div class="tl-flip-card">
-					<div class="tl-front text-white blue-background text-left">
+				<div id="tlSwisscomTrainee" class="tl-flip-card">
+					<div class="card-side tl-front text-white blue-background text-left">
 						<h2><img src="images/logo_white_swisscom.png" width="50%"></img></h2>
 						<p>October 2012 - October 2013</p>
 						<p><b>Graduate Trainee Program</b></p>
 						<p><i>Berne, CH / Palo Alto, USA</i></p>
 						<p>One out of 10 Swiss university graduates to be selected for a company-internal trainee program of 1 year.</p>
+						<div class="button-div text-right">
+							<button id="SwisscomTraineeDetailsButton" class="flipButton btn btn-secondary">Details</button>
+						</div>
 					</div>
-					<div class="tl-back blue-text">
+					<div class="card-side tl-back blue-text">
 						<p><b>Roaming</b> International Inter-Operator Tariff negotiations with partner networks.<br>
 							<i>Responsibilities:</i> Full negotiation authority, signature of contracts. <br>
 							Achievements: <b>Cost savings of 120’000 CHF</b>
@@ -287,23 +305,32 @@
 							<i>Responsibilities:</i> Query design, data mining and business recommendations.<br>
 							<i>Achievements:</i> (Details under NDA) <b>Cost savings and network traffic optimization</b>.
 						</p>
+						<div class="button-div text-right">
+							<button id="SwisscomTraineeLessButton" class="flipButton btn btn-secondary">Less</button>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="container left">
-				<div class="tl-flip-card">
-					<div class="tl-front text-white blue-background text-left">
+				<div id="tlAsyril" class="tl-flip-card">
+					<div class="card-side tl-front text-white blue-background text-left">
 						<h2><img src="images/logo_asyril.png" width="50%"></img></h2>
 						<p>February 2012 - September 2012</p>
 						<p><b>Industrial Master Thesis</b></p>
 						<p><i>Villaz-St-Pierre, CH</i></p>
 						<p>Control design of a Delta Robot</p>
+						<div class="button-div text-right">
+							<button id="AsyrilDetailsButton" class="flipButton btn btn-secondary">Details</button>
+						</div>
 					</div>
-					<div class="tl-back blue-text">
+					<div class="card-side tl-back blue-text">
 						<p><b>Role: </b>Development and validation of an advanced control strategy and algorithm for industrial Delta Robots,
 							guaranteeing very high precision (μm) and ultra quick response.</p>
 						<p><b>Responsibilities:</b> Programming lead, control hardware selection, customer contact.
 						<p><b>Achievements:</b> Built said prototype robot which achieved design goals, <b>thesis graded with highest mark</b>.
+						<div class="button-div text-right">
+							<button id="AsyrilLessButton" class="flipButton btn btn-secondary">Less</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -339,13 +366,27 @@
 				</table>
 			</div>
 			<div class="col-lg-6 padding">
-				<div class="img-container">
-					<img src="images/master_thesis.JPG" class="img-fluid" width="85%">
-					<div class="img-text-overlay">
+				<div id="masterThesis" class="tl-flip-card">
+					<div class="card-side tl-front text-white blue-background text-left">
+						<div class="img-container">
+							<a>
+								<img src="images/master_thesis.JPG" width="85%" onclick="document.getElementById('masterThesis').classList.add('flipped');return false;">
+							</a>
+							<div class="img-text-overlay">
+								<h2>Master Thesis</h2>
+							</div>
+						</div>
+					</div>
+					<div class="card-side tl-back blue-text">
 						<h2>Master Thesis</h2>
+						<h4>Industrial Delta Robot Control</h4>
 						<p>Development and validation of an advanced control strategy and algorithm for industrial Delta Robots,
-							guaranteeing very high precision (μm) and ultra quick response.
+							guaranteeing very high precision (μm) and ultra quick response. <b>Graded with highest mark</b>.
 						</p>
+						<div class="button-div text-right">
+							<button id="getAbstract" class="btn btn-secondary" onclick="window.open('master_thesis_abstract.pdf', '_blank');">See Abstract</button>
+							<button id="masterThesisBackButton" class="flipButton btn btn-secondary">Less</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -570,6 +611,45 @@
 					$('.navbar').fadeOut();
 				}
 			});
+		});
+	});
+</script>
+
+<!-- show or hide timeline details -->
+<script>
+	$(document).ready(function() {
+		$("#inpherDetailsButton").click(function() {
+			document.getElementById("tlInpher").classList.add("flipped");
+		});
+		$("#inpherLessButton").click(function() {
+			document.getElementById("tlInpher").classList.remove("flipped");
+		});
+		$("#SwisscomBigDDetailsButton").click(function() {
+			document.getElementById("tlSwisscomBigD").classList.add("flipped");
+		});
+		$("#SwisscomBigDLessButton").click(function() {
+			document.getElementById("tlSwisscomBigD").classList.remove("flipped");
+		});
+		$("#SwisscomRimsDetailsButton").click(function() {
+			document.getElementById("tlSwisscomRims").classList.add("flipped");
+		});
+		$("#SwisscomRimsLessButton").click(function() {
+			document.getElementById("tlSwisscomRims").classList.remove("flipped");
+		});
+		$("#SwisscomTraineeDetailsButton").click(function() {
+			document.getElementById("tlSwisscomTrainee").classList.add("flipped");
+		});
+		$("#SwisscomTraineeLessButton").click(function() {
+			document.getElementById("tlSwisscomTrainee").classList.remove("flipped");
+		});
+		$("#AsyrilDetailsButton").click(function() {
+			document.getElementById("tlAsyril").classList.add("flipped");
+		});
+		$("#AsyrilLessButton").click(function() {
+			document.getElementById("tlAsyril").classList.remove("flipped");
+		});
+		$("#masterThesisBackButton").click(function() {
+			document.getElementById("masterThesis").classList.remove("flipped");
 		});
 	});
 </script>
