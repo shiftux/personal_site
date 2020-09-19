@@ -467,6 +467,41 @@ section {
 .fa-cube {
   color: #248bfb;
 }
+.thingiverse-logo-parent{
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+}
+.thingiverse-logo {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+}
+.social a .tooltiptext {
+  visibility: hidden;
+  font-size: 15px;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+.social a:hover .tooltiptext {
+  visibility: visible;
+}
 
 /************************* footer **************************/
 
