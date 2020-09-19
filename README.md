@@ -1,3 +1,3 @@
 # My personal website
 
-[shiftux.org](shiftux.org)
+[shiftux.org](https://shiftux.org)
