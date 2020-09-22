@@ -43,7 +43,7 @@
 						<a class="nav-link" href="/index.html#skillzSection">Skillz</a>
 					</li>
 					<li class="navbar-item">
-						<a class="nav-link" href="/index.html#connectSection">Connect</a>
+						<a class="nav-link" href="/index.html#connectSection">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -76,13 +76,13 @@
 				<ul class="no-bullets">
 					<li class="aboutmeLi"><span class="aboutmeKey"><b>Name: </b></span><span class="aboutmeValue">Sandro Montanari</span></li>
 					<li class="aboutmeLi"><span class="aboutmeKey"><b>Location: </b></span><span class="aboutmeValue">Switzerland</span></li>
-					<li class="aboutmeLi"><span class="aboutmeKey"><b>Email: </b></span><span class="aboutmeValue"><a href = "mailto: test@email.com">test@email.com</a></span></li>
+					<li class="aboutmeLi"><span class="aboutmeKey"><b>Handle: </b></span><span class="aboutmeValue">Shiftux</span></li>
 				</ul>
 				<div class="aboutme-img">
 					<img src="images/logo_pic.png" width="50%" class="center">
 				</div>
 				<div class="social padding">
-					<a target="_blank" href="mailto: test@email.com"><i class="fas fa-envelope" title="Email" aria-hidden="true"></i></a>
+					<a href="/index.html#connectSection"><i class="fas fa-envelope" title="Email" aria-hidden="true"></i></a>
 					<a target="_blank" href="https://www.linkedin.com/in/sandromontanari/"><i class="fab fa-linkedin" title="LinkedIn" aria-hidden="true"></i></a>
 					<a target="_blank" href="https://github.com/shiftux"><i class="fab fa-github" title="gitbub" aria-hidden="true"></i></a>
 					<a target="_blank" href="https://www.youtube.com/channel/UCAcrhE_hPxEd2eobvu9gP2g"><i class="fab fa-youtube" title="YouTube" aria-hidden="true"></i></a>
@@ -764,8 +764,8 @@
 <!--- Connect -->
 <section id="connectSection">
 	<div class="container-fluid padding">
-		<div class="row padding text-center">
-			<div class="col-12 blue-text">
+		<div class="row text-center">
+			<div class="col-12 blue-background heading-row">
 				<h2>Connect with me</h2>
 			</div>
 			<div class="col-12 social padding">
@@ -775,6 +775,62 @@
 				<a target="_blank" href="https://www.youtube.com/channel/UCAcrhE_hPxEd2eobvu9gP2g"><i class="fab fa-youtube" title="YouTube" aria-hidden="true"></i></a>
 				<a target="_blank" href="https://www.thingiverse.com/shiftux/designs"><i class="fas fa-cube" title="Thingiverse" aria-hidden="true"></i></a>
 			</div>
+		</div>
+	</div>
+	<div class="container-fluid padding">
+		<div class="row form-container">
+			<form class="contact-form needs-validation" novalidate action="/connectForm" method="post">
+				<div class="form-group row">
+					<label for="inputName" class="col-sm-2 col-form-label">Name<sup>*</sup></label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputName" name="inputName" required minlength="3" >
+						<div class="invalid-feedback">
+							Please enter your name.
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputCompany" class="col-sm-2 col-form-label">Company</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputCompany" name="inputCompany">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputEmail" class="col-sm-2 col-form-label">Email<sup>*</sup></label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="inputEmail" name="inputEmail" required>
+						<div class="invalid-feedback">
+							Please enter a valid email address.
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-2">CV</div>
+					<div class="col-sm-10">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="cvCheckbox" name="cvCheckbox">
+							<label class="form-check-label" for="cvCheckbox">
+								I would like to receive your CV in pdf format
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="messageField" class="col-sm-2 col-form-label">Message<sup>*</sup></label>
+					<div class="col-sm-10">
+						<textarea class="form-control" id="messageField" name="messageField" rows="5" required minlength="5"></textarea>
+						<div class="invalid-feedback">
+							Please enter a message.
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-10">
+						<button type="submit" class="btn btn-primary">Send Message</button>
+					</div>
+				</div>
+			</form>
+			<p><small>Note: I am not storing your information other than in my email account. You will not be contacted by me other than regarding your submitted message.</small></p>
 		</div>
 	</div>
 </section>
@@ -862,6 +918,25 @@
 			document.getElementById("masterThesis").classList.remove("flipped");
 		});
 	});
+</script>
+
+<!-- contact form validation -->
+<script>
+	(function() {
+	  'use strict';
+	  window.addEventListener('load', function() {
+		var forms = document.getElementsByClassName('needs-validation');
+		var validation = Array.prototype.filter.call(forms, function(form) {
+		  form.addEventListener('submit', function(event) {
+			if (form.checkValidity() === false) {
+			  event.preventDefault();
+			  event.stopPropagation();
+			}
+			form.classList.add('was-validated');
+		  }, false);
+		});
+	  }, false);
+	})();
 </script>
 
 </body>

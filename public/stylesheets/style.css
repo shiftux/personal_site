@@ -448,9 +448,16 @@ section {
 }
 
 /************************* connect section **************************/
+#connectSection{
+  padding-left: 0em;
+  padding-right: 0em;
+}
 #connectSection .social a {
   font-size: 4em;
   padding: 3rem;
+}
+#connectSection .heading-row {
+  width: 100%;
 }
 .fa-envelope {
   color: #18314fff;
@@ -467,7 +474,7 @@ section {
 .fa-cube {
   color: #248bfb;
 }
-.thingiverse-logo-parent{
+/* .thingiverse-logo-parent{
   height: 100%;
   position: relative;
   display: inline-block;
@@ -482,25 +489,17 @@ section {
   min-height: 100%;
   min-width: 100%;
   transform: translate(-50%, -50%);
+} */
+.form-container {
+  width: 60%;
+  margin-left: 20%;
 }
-.social a .tooltiptext {
-  visibility: hidden;
-  font-size: 15px;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px;
+.contact-form {
+  position: relative;
+  width: 100%;
 }
-.social a:hover .tooltiptext {
-  visibility: visible;
+.form-alert {
+  width: 100%;
 }
 
 /************************* footer **************************/

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- for mobile sites -->
+	<title>Welcome to Sandro's site</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="../stylesheets/style.css" rel="stylesheet">
+	<link href="../stylesheets/blog_style.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<section id="navbarSection" style="padding-bottom: 100px;"></section>
+
+<section class="blue-text view-width">
+    <div class="container-fluid padding blue-text">
+		<div class="row text-center">
+			<div class="col-12 heading-row">
+				<h1 class="heading">Thanks for reaching out!</h1>
+			</div>
+			<div style="width: 100%;" class="alert alert-danger text-center" role="alert">
+				Your message could not be sent!
+			</div>
+		</div>
+		<div class="row padding">
+			<div class="col-lg-4 col-md-6">
+				<div class="aboutme-img">
+					<img src="images/logo_pic.png" width="50%" class="center">
+				</div>
+				<div class="social padding">
+					<a style="padding: 0.2em;" href="/index.html#connectSection"><i class="fas fa-envelope" title="Email" aria-hidden="true"></i></a>
+					<a style="padding: 0.2em;" target="_blank" href="https://www.linkedin.com/in/sandromontanari/"><i class="fab fa-linkedin" title="LinkedIn" aria-hidden="true"></i></a>
+					<a style="padding: 0.2em;" target="_blank" href="https://github.com/shiftux"><i class="fab fa-github" title="gitbub" aria-hidden="true"></i></a>
+					<a style="padding: 0.2em;" target="_blank" href="https://www.youtube.com/channel/UCAcrhE_hPxEd2eobvu9gP2g"><i class="fab fa-youtube" title="YouTube" aria-hidden="true"></i></a>
+					<a style="padding: 0.2em;" target="_blank" href="https://www.thingiverse.com/shiftux/designs"><i class="fas fa-cube" title="Thingiverse" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-6 text-center">
+				<p>There seems to have been a problem with your email. Please verify your input and try again.</p>
+                <a class="btn btn-primary" onclick="goBack()" role="button">Back to main page</a>
+            </div>
+		</div>
+	</div>
+</section>
+
+<!--- Footer -->
+<footer id="footer" class="blue-background"></footer>
+
+<!--- Bootstrap scripts inclusions -->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha384-/LjQZzcpTzaYn7qWqRIWYC5l8FWEZ2bIHIz0D73Uzba4pShEcdLdZyZkI4Kv676E" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg></script> <!-- for social media icons -->
+
+<!-- include navbar -->
+<script>
+    window.onload = function () {
+        $("#navbarSection").load("../index.html #navbarSection");
+        $("#footer").load("../index.html #footer");    }
+</script>
+<!-- Back button -->
+<script>
+	function goBack() {
+	  window.history.back();
+	}
+</script>
+
+</body>
+</html>
