@@ -196,6 +196,7 @@
 		<div class="row text-center padding">
 			<div class="col-12 heading-row">
 				<h1 class="blue-text heading">Work & Experience</h1>
+				<p>Note: For a PDF version of my CV, please see the <a href="/index.html#connectSection">contact</a> section.</p>
 			</div>
 		</div>
 	</div>
@@ -769,7 +770,6 @@
 				<h2>Connect with me</h2>
 			</div>
 			<div class="col-12 social padding">
-				<a target="_blank" href="mailto: test@email.com"><i class="fas fa-envelope" title="Email" aria-hidden="true"></i></a>
 				<a target="_blank" href="https://www.linkedin.com/in/sandromontanari/"><i class="fab fa-linkedin" title="LinkedIn" aria-hidden="true"></i></a>
 				<a target="_blank" href="https://github.com/shiftux"><i class="fab fa-github" title="gitbub" aria-hidden="true"></i></a>
 				<a target="_blank" href="https://www.youtube.com/channel/UCAcrhE_hPxEd2eobvu9gP2g"><i class="fab fa-youtube" title="YouTube" aria-hidden="true"></i></a>
@@ -780,6 +780,17 @@
 	<div class="container-fluid padding">
 		<div class="row form-container">
 			<form class="contact-form needs-validation" novalidate action="/connectForm" method="post">
+				<div class="form-group row">
+					<div class="col-sm-2">CV</div>
+					<div class="col-sm-10">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="cvCheckbox" name="cvCheckbox">
+							<label class="form-check-label" for="cvCheckbox">
+								I would like to receive your CV in pdf format
+							</label>
+						</div>
+					</div>
+				</div>
 				<div class="form-group row">
 					<label for="inputName" class="col-sm-2 col-form-label">Name<sup>*</sup></label>
 					<div class="col-sm-10">
@@ -805,17 +816,6 @@
 					</div>
 				</div>
 				<div class="form-group row">
-					<div class="col-sm-2">CV</div>
-					<div class="col-sm-10">
-						<div class="form-check">
-							<input class="form-check-input" type="checkbox" id="cvCheckbox" name="cvCheckbox">
-							<label class="form-check-label" for="cvCheckbox">
-								I would like to receive your CV in pdf format
-							</label>
-						</div>
-					</div>
-				</div>
-				<div class="form-group row">
 					<label for="messageField" class="col-sm-2 col-form-label">Message<sup>*</sup></label>
 					<div class="col-sm-10">
 						<textarea class="form-control" id="messageField" name="messageField" rows="5" required minlength="5"></textarea>
@@ -823,6 +823,11 @@
 							Please enter a message.
 						</div>
 					</div>
+				</div>
+				<div class="g-recaptcha" data-sitekey="6LfPQM8ZAAAAAPvsiuUN6d2lhmmJ--fREVcxRfHH" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+				<input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+				<div class="invalid-feedback">
+					Please verify the Captcha.
 				</div>
 				<div class="form-group row">
 					<div class="col-sm-10">
@@ -852,6 +857,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <!-- for social media icons -->
+<script src='https://www.google.com/recaptcha/api.js'></script> <!-- reCaptcha -->
 
 <!-- parallax scroll script -->
 <script>
@@ -923,6 +929,13 @@
 <!-- contact form validation -->
 <script>
 	(function() {
+		window.verifyRecaptchaCallback = function (response) {
+			$('input[data-recaptcha]').val(response).trigger('change');
+		}
+
+		window.expiredRecaptchaCallback = function () {
+			$('input[data-recaptcha]').val("").trigger('change');
+		}
 	  'use strict';
 	  window.addEventListener('load', function() {
 		var forms = document.getElementsByClassName('needs-validation');
