@@ -403,6 +403,9 @@ section {
   position: sticky;
   left: 50%;
 }
+#educationSection td {
+  text-align: left;
+}
 
 /************************* skillz section **************************/
 #skillzSection {
@@ -640,8 +643,39 @@ section {
   #educationSection .img-text-overlay {
     top: 30%;
   }
+  .form-container {
+    width: 85%;
+    margin-left: 7.5%;
+  }
 }
 @media (max-width: 576px) {
+  .welcome h1:after, .welcome h1:before {
+    content: none;
+  }
+  .tl-back {
+    padding: 5px;
+  }
+  .card.back {
+    padding: 5px;
+  }
+  .container {
+    padding-right: 5px;
+  }
+  .padding {
+    padding: 0;
+  }
+  section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #skillzSection .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #skillzSection .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .social a {
     font-size: 2em;
     padding: 1rem;
@@ -662,11 +696,18 @@ section {
   #workSection {
     padding: 0;
   }
+  #projectsSection {
+    padding: 0;
+  }
   #workSection h1 {
     padding: 1rem;
   }
   #educationSection .img-text-overlay {
     top: 10%;
+  }
+  .form-container {
+    width: 90%;
+    margin-left: 5%;
   }
 }
 
