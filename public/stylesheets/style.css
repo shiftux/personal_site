@@ -1,10 +1,10 @@
 /************************* Fonts **************************/
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 /*
 * Raleway for titles
-* text: poppins
+* text: Roboto
 * about me: inconsolata
 */
 
@@ -19,9 +19,12 @@
 html body {
   height: 100%;
   width: 100%;
-  font: 'Poppins', 'Raleway';
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
   text-align: justify;
+}
+b, strong {
+  font-weight: 700;
 }
 html {
   scroll-behavior: smooth;
@@ -409,6 +412,7 @@ section {
 .skillz-subtitle {
   width: 80%;
   left: 10%;
+  color: #18314fff;
 }
 #skillzSection .col-md-6 {
   padding-top: 0;
