@@ -8,13 +8,17 @@
 	<link href="stylesheets/style.css" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" type="text/css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="250">
 
 <!-- Navigation -->
 <section id="navbarSection" style="padding:0">
 	<nav id="global-nav" class="navbar navbar-expand-md navbar-dark fixed-top blue-background">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="/index.html#aboutmeSection"><img height="50px" src="http://localhost:3000/images/logo_pic.png"></a>
+			<div class="navbar-brand">
+				<div class="nav-logo-image"><a href="/index.html#aboutmeSection"><img height="50px" src="http://localhost:3000/images/logo_pic.png"></a>
+				</div>
+				<div class="nav-logo-name">SANDRO<br>MONTANARI</div>
+			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -845,10 +849,10 @@
 <footer id="footer" class="blue-background">
 	<div class="container-fluid padding">
 		<div class="row text-center">
-			<div class="col-12">
-				<img src="http://localhost:3000/images/logo_pic.png" height="60px" alt="profile-pic">
-				<p><i class="fas fa-envelope" title="Email" aria-hidden="true"></i> <a href = "mailto: test@email.com">test@email.com</a></p>
-			</div>
+				<div class="col-xs-12 footer-name">
+					<h4>SANDRO MONTANARI</h4>
+					<p><a href ="/index.html#connectSection">Connect with me</a></p>
+				</div>
 		</div>
 	</div>
 </footer>
@@ -868,23 +872,46 @@
 	});
 </script>
 
-<!-- make navbar appear after scroll -->
+<!-- make navbar appear after scroll, and adapt for mobile -->
 <script>
 	$(document).ready(function(){
 		// set welcome height to window height
 		$(".welcome").height($(window).innerHeight());
-		// hide .navbar first
-		$(".navbar").hide();
-		// fade in .navbar
-		$(function () {
+		// hide .navbar first on page load
+		if(window.outerWidth > 576) { // desktop
+			$(".navbar").hide();
+			// fade in .navbar
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > ($(window).innerHeight() * 0.3)) {
+						$('.navbar').fadeIn();
+					} else {
+						$('.navbar').fadeOut();
+					}
+				});
+			});
+		} else { // mobile screen
+			// source https://www.solodev.com/blog/web-design/bootstrap/build-a-fixed-top-navigation-that-disappears-as-users-scroll.stml
+			hideNav();
+			var previousScroll = 0;
 			$(window).scroll(function () {
-				if ($(this).scrollTop() > ($(window).innerHeight() * 0.3)) {
-					$('.navbar').fadeIn();
-				} else {
-					$('.navbar').fadeOut();
+				var currentScroll = $(this).scrollTop();
+				if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()) {
+					if (currentScroll > previousScroll) { // scrolling down (to the lower part of the page)
+						hideNav();
+					} else {
+						showNav();
+					}
+					previousScroll = currentScroll;
 				}
 			});
-		});
+		}
+		function hideNav() {
+			$(".navbar").removeClass("is-visible").addClass("is-hidden");
+		}
+		function showNav() {
+			$(".navbar").removeClass("is-hidden").addClass("is-visible").addClass("scrolling");
+		}
 	});
 </script>
 

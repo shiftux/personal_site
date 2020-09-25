@@ -65,6 +65,23 @@ section {
 .navbar-nav li {
   font-size: 1.1em !important;
 }
+.nav-logo-image {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align:top;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.nav-logo-name {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align:top;
+  font-family: 'Raleway';
+}
+.is-hidden {
+  opacity: 0;
+  transition: transform 0.4s, opacity 0.2s;
+}
 
 /************************* Intro parallax **************************/
 #welcomeSection {
@@ -481,22 +498,6 @@ section {
 .fa-cube {
   color: #248bfb;
 }
-/* .thingiverse-logo-parent{
-  height: 100%;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  margin: 0;
-}
-.thingiverse-logo {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-height: 100%;
-  min-width: 100%;
-  transform: translate(-50%, -50%);
-} */
 .form-container {
   width: 60%;
   margin-left: 20%;
@@ -510,7 +511,13 @@ section {
 }
 
 /************************* footer **************************/
-
+.footer-name {
+  font-family: 'Raleway';
+  font-weight: 700;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 
 /************************* Media Queries for responsive design **************************/
 /*
