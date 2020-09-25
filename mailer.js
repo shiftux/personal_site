@@ -9,7 +9,9 @@ class Mailer {
     this.company = company;
     this.sendCV = sendCV;
     this.transporter = nodemailer.createTransport({
-      service: "Mailgun",
+      host: "smtp.eu.mailgun.org",
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.MAILER_USER,
         pass: process.env.MAILER_PW
@@ -17,7 +19,7 @@ class Mailer {
     });
     this.emailOptions = {
       from: process.env.MAILER_MYMAIL,
-      to: 's.montanari@gmx.ch', // to: process.env.MAILER_MYMAIL,
+      to: process.env.MAILER_MYMAIL,
       subject: 'Received message on Website',
       text: this.message
     };
@@ -29,9 +31,10 @@ class Mailer {
   }
   confirmInquiry(){
     this.emailOptions['subject'] = 'Contacted Sandro Montanari';
+    this.emailOptions['to'] = this.email;
     let msg = `Hi ${this.name},\n\n Thanks for reaching out! I've received your inquiry and will be in touch soon.\n`;
     const copy = `PS Below you'll find a copy of your inquiry:\n\n${this.message}\n\n`
-    const closing =  'Best regards, Sandro\n\n';
+    const closing =  'Best regards,\nSandro\n\n';
     if(this.sendCV){
       msg = msg.concat('Please find the requested CV attached.\n\n');
       this.emailOptions['attachments'] = [
