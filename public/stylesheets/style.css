@@ -94,6 +94,11 @@ section {
 .welcome .row {
   display: block;
 }
+.jumbotron{
+  margin-bottom: 0; /* remove default margin */
+  border-radius: 0;
+  background-size: cover;
+}
 .parallax {
   background-attachment: fixed;
   background-size: cover;
@@ -101,7 +106,7 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 0 50%;
 }
 .parallaxsection {
   background-image: url('../images/bg_sandro.jpg');
@@ -109,14 +114,7 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
   height: 100%;
-}
-.jumbotron{
-  margin-bottom: 0; /* remove default margin */
-  border-radius: 0;
-  background-size: cover;
 }
 /* Text style for Parallax Welcome */
 .parallax p {
@@ -578,6 +576,9 @@ section {
   }
   #educationSection .img-text-overlay {
     top: 20%;
+  }
+  .parallax {
+    background-position: 50% 50%;
   }
 }
 @media (max-width: 992px) {
