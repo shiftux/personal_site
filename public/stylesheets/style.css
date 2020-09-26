@@ -211,15 +211,19 @@ section {
 .card-container {
   display: grid;
   perspective: 700px;
+  text-align: left;
 }
 .flip-card, .card-container {
   display: grid; grid-template: 1fr / 1fr;
   grid-template-areas: "frontAndBack";
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition: all 0.7s ease;
 }
 .flip-card div {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 .front {
@@ -228,9 +232,17 @@ section {
 .back {
   grid-area: frontAndBack;
   transform: rotateY(-180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
 }
 .card-container:hover .flip-card {
   transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
 }
 
 /************************* Work & experience section **************************/
@@ -293,12 +305,20 @@ section {
 }
 .tl-back {
   transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   border-radius: 6px;
   background-color: white;
   border-color: #18314fff;
 }
 .tl-flip-card.flipped {
   transform: rotateY(-180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
 }
 .button-div {
   border: hidden;
