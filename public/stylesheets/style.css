@@ -100,7 +100,7 @@ section {
   background-size: cover;
 }
 .parallax {
-  background-attachment: fixed;
+  background-attachment: initial;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
