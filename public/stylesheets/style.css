@@ -216,6 +216,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   max-width: 1400px;
+  width: 80%;
 }
 .project-title {
   font-family: 'Raleway';
@@ -239,7 +240,10 @@ section {
   transform: translate(-50%, 0);
 }
 .card.back {
-  padding: 1em;
+  padding: 2em;
+}
+.card.back h4 {
+  padding-bottom: 1em;
 }
 /* Flipping Cards */
 .card-container {
@@ -688,6 +692,9 @@ section {
   #aboutmeSection .social a {
     padding: 0.2rem;
   }
+  .card.back h4 {
+    padding-bottom: 0;
+  }
   .parallax {
     background-position: 50% 50%;
   }
@@ -726,6 +733,12 @@ section {
   }
   .projects-container {
     max-width: 700px;
+  }
+  .card.back {
+    padding: 1em;
+  }
+  .card.back h4 {
+    padding-bottom: 0em;
   }
   #workSection {
     width: 90%;
@@ -783,7 +796,7 @@ section {
 }
 @media (max-width: 768px) {
   .projects-container {
-    max-width: 500px;
+    max-width: 450px;
     width: 80%;
   }
   .social a {

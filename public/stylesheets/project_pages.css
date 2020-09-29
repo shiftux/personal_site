@@ -42,6 +42,12 @@
     position: absolute;
     clear: both;
 }
+.card.back {
+    padding: 2em;
+}
+.card.back h4 {
+    padding-bottom: 1em;
+}
 
 /* Media reactive */
 @media (max-width: 992px) {
