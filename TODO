@@ -1,10 +1,6 @@
-change footer
+cftb images
 
-contact mail - remove
-connect icons reactive
 npm vulnerability, npm audit
-
-this website and it's hosting and load balancing... really load balancing?
 
 change window onload to use promises, for active nav sections
 
@@ -13,20 +9,51 @@ maybe add prometheus and a load test demo on k8s
 
 talk about testing
 
-add certifications
-
 mois FM?
 
 cleanup the github for the dactyl
 
 clean up github
 work on linkedin
-make a shiftux youtube channel
-add weightlifter to thingiverse
 
 patron page
 
-
 viz feedback:
 - also add wish/planned skillz
-- header, maybe put name rather than pic
+
+
+Fabrice notes
+
+Have a first selling phrase at the welcome screen
+Start google analytics
+
+Link to contact section after my call to challenge me
+
+Timeline back button aligned with details buttonTimeline top, dashed line to end it
+
+Timeline put real dashes on the time (em dash)Bold on timeline is not enough
+
+Order skills more to preferenceMax width to skills section
+
+More padding in project index pagesCF web app, put logo on image
+Less width on article pages
+Web app image: take a pic of me using the app on the phone
+Set the header section appart
+
+On the mail message, ps, has two dots
+Primary buttons, more padding, send form at least
+All image boarders the same width
+
+On the mobile scrolling problem, probably navbar padding
+
+put jade back?
+
+CV put place on the left
+Maybe also position on the left
+Also company names on the left
+Professional experience should be skills
+Order education, skills, certification, language, education. For space put master thesis on the education section and add grade.
+Nationality
+Age
+
+On the blog, about the RR app, put quote from users
