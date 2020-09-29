@@ -33,7 +33,7 @@ class Mailer {
     this.emailOptions['subject'] = 'Contacted Sandro Montanari';
     this.emailOptions['to'] = this.email;
     let msg = `Hi ${this.name},\n\n Thanks for reaching out! I've received your inquiry and will be in touch soon.\n`;
-    const copy = `PS Below you'll find a copy of your inquiry:\n\n${this.message}\n\n`
+    const copy = `P.S. Below you'll find a copy of your inquiry:\n\n${this.message}\n\n`
     const closing =  'Best regards,\nSandro\n\n';
     if(this.sendCV){
       msg = msg.concat('Please find the requested CV attached.\n\n');

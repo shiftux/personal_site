@@ -209,8 +209,8 @@
 				<div id="tlInpher" class="tl-flip-card">
 					<div class="card-side tl-front text-white blue-background text-left d-flex flex-column">
 						<h2><a target="_blank" href="https://www.inpher.io"><img class="tl-logo-img" src="images/logo_inpher.png"></img></a></h2>
-						<p>April 2018 - present</p>
-						<p><b>Director of Product</b></p>
+						<p>April 2018 &mdash; present</p>
+						<h5>Director of Product</h5>
 						<p><i>New York, USA / Lausanne, CH</i></p>
 						<p>Startup, Privacy Preserving Machine Learning, Cryptography</p>
 						<p>Train and use distributed models without learning anything about the secret distributed input data.</p>
@@ -232,8 +232,8 @@
 				<div id="tlSwisscomBigD" class="tl-flip-card">
 					<div class="card-side tl-front text-white blue-background text-left d-flex flex-column">
 						<h2><a target="_blank" href="https://www.swisscom.ch/en/about.html"><img class="tl-logo-img" src="images/logo_white_swisscom.png"></img></a></h2>
-						<p>December 2016 - April 2018</p>
-						<p><b>Developer / Product Manager</b></p>
+						<p>December 2016 &mdash; April 2018</p>
+						<h5>Developer / Product Manager</h5>
 						<p><i>Berne, CH</i></p>
 						<p>Swisscom Big Data Platform</p>
 						<p>Design, build and maintain the Swisscom Big Data Platform, ingest data and manage stakeholders.</p>
@@ -253,8 +253,8 @@
 				<div id="tlSwisscomRims" class="tl-flip-card">
 					<div class="card-side tl-front text-white blue-background text-left d-flex flex-column">
 						<h2><a target="_blank" href="https://www.swisscom.ch/en/about.html"><img class="tl-logo-img" src="images/logo_white_swisscom.png"></img></a></h2>
-						<p>October 2013 - December 2016</p>
-						<p><b>Software development</b></p>
+						<p>October 2013 &mdash; December 2016</p>
+						<h5>Software development</h5>
 						<p><i>Berne, CH</i></p>
 						<p>Remote Infrastructure Management Systems</p>
 						<p>Software development, cloud-based remote IT-infrastructure management system</p>
@@ -272,8 +272,8 @@
 				<div id="tlSwisscomTrainee" class="tl-flip-card">
 					<div class="card-side tl-front text-white blue-background text-left d-flex flex-column">
 						<h2><a target="_blank" href="https://www.swisscom.ch/en/about/jobs/next-apprenticeship-internship-traineeship/trainee-programme-step-in-graduate-internship.html"><img class="tl-logo-img" src="images/logo_white_swisscom.png"></img></a></h2>
-						<p>October 2012 - October 2013</p>
-						<p><b>Graduate Trainee Program</b></p>
+						<p>October 2012 &mdash; October 2013</p>
+						<h5>Graduate Trainee Program</h5>
 						<p><i>Berne, CH / Palo Alto, USA</i></p>
 						<p>One out of 10 Swiss university graduates to be selected for a company-internal trainee program of 1 year.</p>
 						<button id="SwisscomTraineeDetailsButton" class="btn btn-secondary ml-auto mt-auto">Details</button>
@@ -300,8 +300,8 @@
 				<div id="tlAsyril" class="tl-flip-card">
 					<div class="card-side tl-front text-white blue-background text-left d-flex flex-column">
 						<h2><a target="_blank" href="https://www.asyril.com/en/"><img class="tl-logo-img" src="images/logo_asyril.png"></img></a></h2>
-						<p>February 2012 - September 2012</p>
-						<p><b>Industrial Master Thesis</b></p>
+						<p>February 2012 &mdash; September 2012</p>
+						<h5>Industrial Master Thesis</h5>
 						<p><i>Villaz-St-Pierre, CH</i></p>
 						<p>Control design of a Delta Robot</p>
 						<button id="AsyrilDetailsButton" class="btn btn-secondary ml-auto mt-auto">Details</button>
@@ -332,7 +332,7 @@
 		</div>
 		<div class="row padding">
 			<div id="educationTable" class="col-xl-7">
-				<table>
+				<table class="text-left">
 					<tr>
 						<th style="min-width: 90px;" class="tabletitle">Studies</th>
 						<th style="min-width: 60px;" class="tabletitle"></th>
@@ -340,13 +340,13 @@
 					</tr>
 					<tr>
 						<td rowspan="4"><a target="_blank" href="https://www.epfl.ch">EPFL</td>
-						<td>2010 - 2012</td>
+						<td>2010 &mdash; 2012</td>
 						<td><b>Master of Science</b></td>
 					</tr><tr>
 						<td></td>
 						<td>Robotics, Automation and Control</td>
 					</tr><tr>
-						<td>2006 - 2010</td>
+						<td>2006 &mdash; 2010</td>
 						<td><b>Bachelor of Science</b></td>
 					</tr><tr>
 						<td></td>
@@ -853,64 +853,13 @@
 <script src='https://www.google.com/recaptcha/api.js'></script> <!-- reCaptcha -->
 
 <!-- parallax scroll script -->
-<script>
-	window.addEventListener("scroll", function() {
-		const scrollY = window.scrollY;
-		document.querySelector(".welcome").style.transform = `translateY(${-scrollY * 0.2}px)`;
-	});
-</script>
+<script src="javascripts/parallax_scrolling.js"></script>
 
 <!-- scroll invitation delay -->
-<script>
-    $(document).ready(function(){
-        $("#scrollInvite").hide();
-        setTimeout(function () { $("#scrollInvite").fadeIn(); }, 2000); //ms
-    });
-</script>
+<script src="javascripts/scroll_invite_delay.js"></script>
 
 <!-- make navbar appear after scroll, and adapt for mobile -->
-<script>
-	$(document).ready(function(){
-		// set welcome height to window height
-		$(".welcome").height($(window).innerHeight());
-		// hide .navbar first on page load
-		if(window.outerWidth > 576) { // desktop
-			$(".navbar").hide();
-			// fade in .navbar
-			$(function () {
-				$(window).scroll(function () {
-					if ($(this).scrollTop() > ($(window).innerHeight() * 0.3)) {
-						$('.navbar').fadeIn();
-						$('#scrollInvite').fadeOut();
-					} else {
-						$('.navbar').fadeOut();
-					}
-				});
-			});
-		} else { // mobile screen
-			// source https://www.solodev.com/blog/web-design/bootstrap/build-a-fixed-top-navigation-that-disappears-as-users-scroll.stml
-			hideNav();
-			var previousScroll = 0;
-			$(window).scroll(function () {
-				var currentScroll = $(this).scrollTop();
-				if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()) {
-					if (currentScroll > previousScroll) { // scrolling down (to the lower part of the page)
-						hideNav();
-					} else {
-						showNav();
-					}
-					previousScroll = currentScroll;
-				}
-			});
-		}
-		function hideNav() {
-			$(".navbar").removeClass("is-visible").addClass("is-hidden");
-		}
-		function showNav() {
-			$(".navbar").removeClass("is-hidden").addClass("is-visible").addClass("scrolling");
-		}
-	});
-</script>
+<script src="javascripts/navbar_after_scroll.js"></script>
 
 <!-- show or hide timeline details -->
 <script>
@@ -956,27 +905,26 @@
 
 <!-- contact form validation -->
 <script>
-	(function() {
+	(function () {
 		window.verifyRecaptchaCallback = function (response) {
 			$('input[data-recaptcha]').val(response).trigger('change');
 		}
-
 		window.expiredRecaptchaCallback = function () {
 			$('input[data-recaptcha]').val("").trigger('change');
 		}
-	  'use strict';
-	  window.addEventListener('load', function() {
-		var forms = document.getElementsByClassName('needs-validation');
-		var validation = Array.prototype.filter.call(forms, function(form) {
-		  form.addEventListener('submit', function(event) {
-			if (form.checkValidity() === false) {
-			  event.preventDefault();
-			  event.stopPropagation();
-			}
-			form.classList.add('was-validated');
-		  }, false);
-		});
-	  }, false);
+		'use strict';
+		window.addEventListener('load', function () {
+			var forms = document.getElementsByClassName('needs-validation');
+			var validation = Array.prototype.filter.call(forms, function (form) {
+				form.addEventListener('submit', function (event) {
+					if (form.checkValidity() === false) {
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					form.classList.add('was-validated');
+				}, false);
+			});
+		}, false);
 	})();
 </script>
 

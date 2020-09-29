@@ -16,30 +16,16 @@
 <section class="blue-text view-width">
     <div class="container-fluid padding blue-text">
 		<div class="row text-center">
-			<div class="col-12 heading-row">
-				<h1 class="heading">Thanks for reaching out!</h1>
-			</div>
-			<div style="width: 100%;" class="alert alert-danger text-center" role="alert">
-				Your message could not be sent!
-			</div>
-		</div>
-		<div class="row padding">
-			<div class="col-lg-4 col-md-6">
-				<div class="aboutme-img">
-					<img src="images/logo_pic.png" width="50%" class="center">
+			<div class="col-12">
+				<div class="col-12 heading-row">
+					<h1 class="heading">Thanks for reaching out!</h1>
 				</div>
-				<div class="social padding">
-					<a style="padding: 0.2em;" href="/index.html#connectSection"><i class="fas fa-envelope" title="Email" aria-hidden="true"></i></a>
-					<a style="padding: 0.2em;" target="_blank" href="https://www.linkedin.com/in/sandromontanari/"><i class="fab fa-linkedin" title="LinkedIn" aria-hidden="true"></i></a>
-					<a style="padding: 0.2em;" target="_blank" href="https://github.com/shiftux"><i class="fab fa-github" title="gitbub" aria-hidden="true"></i></a>
-					<a style="padding: 0.2em;" target="_blank" href="https://www.youtube.com/channel/UCAcrhE_hPxEd2eobvu9gP2g"><i class="fab fa-youtube" title="YouTube" aria-hidden="true"></i></a>
-					<a style="padding: 0.2em;" target="_blank" href="https://www.thingiverse.com/shiftux/designs"><i class="fas fa-cube" title="Thingiverse" aria-hidden="true"></i></a>
+				<div style="width: 100%;" class="alert alert-danger text-center" role="alert">
+					Your message could not be sent!
 				</div>
-			</div>
-			<div class="col-lg-8 col-md-6 text-center">
 				<p>There seems to have been a problem with your email. Please verify your input and try again.</p>
-                <a class="btn btn-primary" onclick="goBack()" role="button">Back to main page</a>
-            </div>
+				<a class="btn btn-primary" onclick="goBack()" role="button">Back to main page</a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -65,6 +51,15 @@
 	  window.history.back();
 	}
 </script>
+
+<!-- parallax scroll script -->
+<script src="javascripts/parallax_scrolling.js"></script>
+
+<!-- scroll invitation delay -->
+<script src="javascripts/scroll_invite_delay.js"></script>
+
+<!-- make navbar appear after scroll, and adapt for mobile -->
+<script src="javascripts/navbar_after_scroll.js"></script>
 
 </body>
 </html>
