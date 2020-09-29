@@ -6,11 +6,7 @@ const { body, validationResult } = require('express-validator');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  try {
-    res.render('index', { title: 'Express' });
-  } catch (error) {
-    console.log('--- caught error: ', error)
-  }
+  res.render('index', { title: 'Sandro\'s site' });
 });
 
 router.post('/connectForm', [
