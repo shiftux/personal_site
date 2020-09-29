@@ -12,12 +12,12 @@
 
 <!-- Navigation -->
 <section id="navbarSection" style="padding:0">
-	<nav id="global-nav" class="navbar navbar-expand-md navbar-dark fixed-top blue-background">
-		<div class="container-fluid">
+	<div class="container-fluid">
+		<nav id="global-nav" class="navbar navbar-expand-md navbar-dark fixed-top blue-background">
 			<div class="navbar-brand">
-				<div class="nav-logo-image"><a href="/index.html#aboutmeSection"><img height="50px" src="https://shiftux.org/images/logo_pic.png"></a>
+				<div class="nav-logo-image"><a href="/index.html#aboutmeSection"><img class="logo-img" src="https://shiftux.org/images/logo_pic.png"></a>
 				</div>
-				<div class="nav-logo-name">SANDRO<br>MONTANARI</div>
+				<div class="nav-logo-name"><a href="/index.html#aboutmeSection">SANDRO<br>MONTANARI</a></div>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
@@ -52,17 +52,21 @@
 					</li>
 				</ul>
 			</div>
-		</div>
-	</nav>
+		</nav>
+	</div>
 </section>
 
 <!--- Welcome -->
-<section id="welcomeSection">
+<section style="margin-bottom: -15em;" id="welcomeSection">
 	<div class="welcome">
 		<div class="jumbotron parallax parallaxsection">
 			<div class="row text-center">
 				<p>Hi, I'm</p>
 				<h1 class="display-4"><strong>SANDRO MONTANARI</strong></h1>
+				<a href="#aboutmeSection"><svg id="scrollInvite" style="margin-top: 140px;" width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-chevron-double-down" fill="white" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+					<path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+				</svg></a>
 			</div>
 		</div>
 	</div>
@@ -77,7 +81,7 @@
 			</div>
 		</div>
 		<div class="row padding">
-			<div class="col-lg-4 col-md-6">
+			<div class="col-lg-4">
 				<div class="aboutme-img">
 					<img src="images/logo_pic.png" width="50%" class="center">
 				</div>
@@ -89,7 +93,7 @@
 					<a target="_blank" href="https://www.thingiverse.com/shiftux/designs"><i class="fas fa-cube" title="Thingiverse" aria-hidden="true"></i></a>
 				</div>
 			</div>
-			<div class="col-lg-8 col-md-6">
+			<div class="col-lg-8">
 				<p>I'm an energetic person who loves to be challenged. This can be in sports, where I climbed mountains as high as 5400m or take my
 					bike and pedal for 2500km across 8 countries, in private projects where I build robots, apps, websites and 3D print planes
 					or in my professional life where thrive in the most innovative environments.
@@ -113,39 +117,43 @@
 		</div>
 	</div>
 
-	<div class="container-fluid padding">
+	<div class="container-fluid padding projects-container">
 		<div class="row padding">
 			<div class="col-lg-4 col-md-6 card-container">
 				<div class="flip-card">
 					<div class="card front">
-						<img src="images/projects_it.jpeg" class="card-img" alt="IT">
+						<div class="card-img-container">
+							<img src="images/projects_it.jpeg" class="card-img" alt="IT">
+						</div>
+						<div>
+							<h1 class="text-center project-title blue-text">IT</h1>
+						</div>
 					</div>
 					<div class="card back bg-light blue-text">
 						<h4>Learn about my IT projects, featured are:</h4>
-						<p>
 							<ul>
-								<li>This website and its hosting and load balancing</li>
+								<li>This website</li>
 								<li>A CrossFit management platform I built and am hosting in production</li>
 								<li>My (almost fully) automated home</li>
 								<li>A blockchain delegate experience</li>
 								<li>A brain-teasing Android app</li>
 							</ul>
-						</p>
-						<a class="btn btn-primary" href="/it_projects/index.html" role="button">Show me</a>
+						<a class="btn btn-primary  mt-auto" href="/it_projects/index.html" role="button">Show me</a>
 					</div>
-				</div>
-				<div>
-					<h1 class="text-center heading">IT</h1>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 card-container">
 				<div class="flip-card">
 					<div class="card front">
-						<img src="images/projects_making.jpeg" class="card-img" alt="IT">
+						<div class="card-img-container">
+							<img src="images/projects_making.jpeg" class="card-img" alt="Making">
+						</div>
+						<div>
+							<h1 class="text-center project-title blue-text">Making</h1>
+						</div>
 					</div>
 					<div class="card back bg-light blue-text">
 						<h4>I enjoy making things, let me show you a couple of projects:</h4>
-						<p>
 							<ul>
 								<li>A 3D printed R/C airplane</li>
 								<li>How I made my girlfriend a wedding ring</li>
@@ -153,34 +161,29 @@
 								<li>My self-built keyboard</li>
 								<li>Restoration of a 1972 Harley</li>
 							</ul>
-						</p>
-						<a class="btn btn-primary" href="/making_projects/index.html" role="button">Show me</a>
+						<a class="btn btn-primary  mt-auto" href="/making_projects/index.html" role="button">Show me</a>
 					</div>
-				</div>
-				<div>
-					<h1 class="text-center heading">Making</h1>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 card-container">
 				<div class="flip-card">
 					<div class="card front">
-						<img src="images/projects_sports.JPG" class="card-img" alt="IT">
+						<div class="card-img-container">
+							<img src="images/projects_sports.JPG" class="card-img" alt="Adventures">
+						</div>
+						<div>
+							<h1 class="text-center project-title blue-text">Adventures</h1>
+						</div>
 					</div>
 					<div class="card back bg-light blue-text">
-						<h4>I enjoy sporty challenges and some fiddling with pictures</h4>
-						<p>
+						<h4>I enjoy sporty challenges</h4>
 							<ul>
 								<li>Bicycle trip across 8 countries</li>
 								<li>Climbing the Matterhorn</li>
 								<li>24h hours of non-stop sports</li>
-								<li>Some pictures & Photoshop experiments</li>
 							</ul>
-						</p>
-						<a class="btn btn-primary" href="/sports_projects/index.html" role="button">Show me</a>
+						<a class="btn btn-primary  mt-auto" href="/sports_projects/index.html" role="button">Show me</a>
 					</div>
-				</div>
-				<div>
-					<h1 class="text-center heading">Sports & Foto</h1>
 				</div>
 			</div>
 		</div>
@@ -199,22 +202,21 @@
 	</div>
 
 	<div class="container-fluid padding">
-		<hr class="timeline-hr">
+		<!-- <hr class="timeline-hr"> -->
+		<div id="tl-chevron"></div>
 		<div class="timeline">
 			<div class="container left">
 				<div id="tlInpher" class="tl-flip-card">
-					<div class="card-side tl-front text-white blue-background text-left">
-						<h2><a target="_blank" href="https://www.inpher.io"><img src="images/logo_inpher.png" width="50%"></img></a></h2>
+					<div class="card-side tl-front text-white blue-background text-left d-flex flex-column">
+						<h2><a target="_blank" href="https://www.inpher.io"><img class="tl-logo-img" src="images/logo_inpher.png"></img></a></h2>
 						<p>April 2018 - present</p>
 						<p><b>Director of Product</b></p>
 						<p><i>New York, USA / Lausanne, CH</i></p>
 						<p>Startup, Privacy Preserving Machine Learning, Cryptography</p>
 						<p>Train and use distributed models without learning anything about the secret distributed input data.</p>
-						<div class="button-div text-right">
-							<button id="inpherDetailsButton" class="flipButton btn btn-secondary">Details</button>
-						</div>
+						<button id="inpherDetailsButton" class="btn btn-secondary ml-auto mt-auto">Details</button>
 					</div>
-					<div class="card-side tl-back blue-text">
+					<div class="card-side tl-back blue-text d-flex flex-column">
 						<p><b>Role: </b>Fifth member to join, started out coding on the product (still doing that), now owning the product
 							development roadmap, <b>line manager</b> and <b>key account manager</b>, member of the <b>executive team,</b> reporting to the CEO. Spent a year working
 							in the <b>New York</b> office.</p>
@@ -222,73 +224,61 @@
 							implementation team. Team lead of product management team. Sales, contract execution, POCs and <b>production rollout at client’s sites worldwide</b>.</p>
 						<p><b>Achievements:</b> Transformed a research-based library to a <b>industry-grade product</b>, now integrated at
 							customer’s sites. Managing the companies largest production customer account.</p>
-						<div class="button-div text-right">
-							<button id="inpherLessButton" class="flipButton btn btn-secondary">Less</button>
-						</div>
+						<button id="inpherLessButton" class="btn btn-secondary ml-auto mt-auto">Less</button>
 					</div>
 				</div>
 			</div>
 			<div class="container right">
 				<div id="tlSwisscomBigD" class="tl-flip-card">
-					<div class="card-side tl-front text-white blue-background text-left">
-						<h2><a target="_blank" href="https://www.swisscom.ch/en/about.html"><img src="images/logo_white_swisscom.png" width="50%"></img></a></h2>
+					<div class="card-side tl-front text-white blue-background text-left d-flex flex-column">
+						<h2><a target="_blank" href="https://www.swisscom.ch/en/about.html"><img class="tl-logo-img" src="images/logo_white_swisscom.png"></img></a></h2>
 						<p>December 2016 - April 2018</p>
 						<p><b>Developer / Product Manager</b></p>
 						<p><i>Berne, CH</i></p>
 						<p>Swisscom Big Data Platform</p>
 						<p>Design, build and maintain the Swisscom Big Data Platform, ingest data and manage stakeholders.</p>
-						<div class="button-div text-right">
-							<button id="SwisscomBigDDetailsButton" class="flipButton btn btn-secondary">Details</button>
-						</div>
+						<button id="SwisscomBigDDetailsButton" class="btn btn-secondary ml-auto mt-auto">Details</button>
 					</div>
-					<div class="card-side tl-back blue-text">
+					<div class="card-side tl-back blue-text d-flex flex-column">
 						<p><b>Role: </b>There was a small rack running a Hadoop cluster and some try-outs with Kafka. People liked it, so we made it the <b>main data lake for the largest Swiss telecom provider</b>.</p>
 						<p><b>Responsibilities:</b> Roadmap, agile development process, stakeholder management, customer interactions, software development, <b>24/7 on-call</b> duties.</p>
 						<p><b>Achievements:</b> Bringing the product <b>from an extended proof of concept state to a mature enterprise platform</b>,
 							introducing agile development processes and customer interaction processes.
 						</p>
-						<div class="button-div text-right">
-							<button id="SwisscomBigDLessButton" class="flipButton btn btn-secondary">Less</button>
-						</div>
+						<button id="SwisscomBigDLessButton" class="btn btn-secondary ml-auto mt-auto">Less</button>
 					</div>
 				</div>
 			</div>
 			<div class="container left">
 				<div id="tlSwisscomRims" class="tl-flip-card">
-					<div class="card-side tl-front text-white blue-background text-left">
-						<h2><a target="_blank" href="https://www.swisscom.ch/en/about.html"><img src="images/logo_white_swisscom.png" width="50%"></img></a></h2>
+					<div class="card-side tl-front text-white blue-background text-left d-flex flex-column">
+						<h2><a target="_blank" href="https://www.swisscom.ch/en/about.html"><img class="tl-logo-img" src="images/logo_white_swisscom.png"></img></a></h2>
 						<p>October 2013 - December 2016</p>
 						<p><b>Software development</b></p>
 						<p><i>Berne, CH</i></p>
 						<p>Remote Infrastructure Management Systems</p>
 						<p>Software development, cloud-based remote IT-infrastructure management system</p>
-						<div class="button-div text-right">
-							<button id="SwisscomRimsDetailsButton" class="flipButton btn btn-secondary">Details</button>
-						</div>
+						<button id="SwisscomRimsDetailsButton" class="btn btn-secondary ml-auto mt-auto">Details</button>
 					</div>
-					<div class="card-side tl-back blue-text">
+					<div class="card-side tl-back blue-text d-flex flex-column">
 						<p><b>Role: </b>Develop an <b>in-house built, cloud-based</b> remote management solution for IT infrastructure using mostly open source technologies. Monitoring,
 							incident management and alarming for your custom hardware out of the cloud.</p>
 						<p><b>Achievements:</b> Bringing bleeding edge tech into the company, developed solution <b>is still being used</b> to date.</p>
-						<div class="button-div text-right">
-							<button id="SwisscomRimsLessButton" class="flipButton btn btn-secondary">Less</button>
-						</div>
+						<button id="SwisscomRimsLessButton" class="btn btn-secondary ml-auto mt-auto">Less</button>
 					</div>
 				</div>
 			</div>
 			<div class="container right">
 				<div id="tlSwisscomTrainee" class="tl-flip-card">
-					<div class="card-side tl-front text-white blue-background text-left">
-						<h2><a target="_blank" href="https://www.swisscom.ch/en/about/jobs/next-apprenticeship-internship-traineeship/trainee-programme-step-in-graduate-internship.html"><img src="images/logo_white_swisscom.png" width="50%"></img></a></h2>
+					<div class="card-side tl-front text-white blue-background text-left d-flex flex-column">
+						<h2><a target="_blank" href="https://www.swisscom.ch/en/about/jobs/next-apprenticeship-internship-traineeship/trainee-programme-step-in-graduate-internship.html"><img class="tl-logo-img" src="images/logo_white_swisscom.png"></img></a></h2>
 						<p>October 2012 - October 2013</p>
 						<p><b>Graduate Trainee Program</b></p>
 						<p><i>Berne, CH / Palo Alto, USA</i></p>
 						<p>One out of 10 Swiss university graduates to be selected for a company-internal trainee program of 1 year.</p>
-						<div class="button-div text-right">
-							<button id="SwisscomTraineeDetailsButton" class="flipButton btn btn-secondary">Details</button>
-						</div>
+						<button id="SwisscomTraineeDetailsButton" class="btn btn-secondary ml-auto mt-auto">Details</button>
 					</div>
-					<div class="card-side tl-back blue-text">
+					<div class="card-side tl-back blue-text d-flex flex-column">
 						<p><b>Roaming</b> International Inter-Operator Tariff negotiations with partner networks.<br>
 							<i>Responsibilities:</i> Full negotiation authority, signature of contracts. <br>
 							Achievements: <b>Cost savings of 120’000 CHF</b>
@@ -302,31 +292,28 @@
 							<i>Responsibilities:</i> Query design, data mining and business recommendations.<br>
 							<i>Achievements:</i> (Details under NDA) <b>Cost savings and network traffic optimization</b>.
 						</p>
-						<div class="button-div text-right">
-							<button id="SwisscomTraineeLessButton" class="flipButton btn btn-secondary">Less</button>
-						</div>
+						<button id="SwisscomTraineeLessButton" class="btn btn-secondary ml-auto mt-auto">Less</button>
 					</div>
 				</div>
 			</div>
 			<div class="container left">
 				<div id="tlAsyril" class="tl-flip-card">
-					<div class="card-side tl-front text-white blue-background text-left">
-						<h2><a target="_blank" href="https://www.asyril.com/en/"><img src="images/logo_asyril.png" width="50%"></img></a></h2>
+					<div class="card-side tl-front text-white blue-background text-left d-flex flex-column">
+						<h2><a target="_blank" href="https://www.asyril.com/en/"><img class="tl-logo-img" src="images/logo_asyril.png"></img></a></h2>
 						<p>February 2012 - September 2012</p>
 						<p><b>Industrial Master Thesis</b></p>
 						<p><i>Villaz-St-Pierre, CH</i></p>
 						<p>Control design of a Delta Robot</p>
-						<div class="button-div text-right">
-							<button id="AsyrilDetailsButton" class="flipButton btn btn-secondary">Details</button>
-						</div>
+						<button id="AsyrilDetailsButton" class="btn btn-secondary ml-auto mt-auto">Details</button>
 					</div>
-					<div class="card-side tl-back blue-text">
+					<div class="card-side tl-back blue-text d-flex flex-column">
 						<p><b>Role: </b>Development and validation of an advanced control strategy and algorithm for industrial Delta Robots,
 							guaranteeing very high precision (μm) and ultra quick response.</p>
-						<p><b>Responsibilities:</b> Programming lead, control hardware selection, customer contact.
-						<p><b>Achievements:</b> Built said prototype robot which achieved design goals, <b>thesis graded with highest mark</b>.
-						<div class="button-div text-right">
-							<button id="AsyrilLessButton" class="flipButton btn btn-secondary">Less</button>
+						<p><b>Responsibilities:</b> Programming lead, control hardware selection, customer contact.</p>
+						<p><b>Achievements:</b> Built said prototype robot which achieved design goals, <b>thesis graded with highest mark</b>.</p>
+						<div class="button-div text-right ml-auto mt-auto">
+							<a class="btn btn-secondary" href="#educationSection" role="button">More info</a>
+							<button id="AsyrilLessButton" class="btn btn-secondary">Less</button>
 						</div>
 					</div>
 				</div>
@@ -344,45 +331,69 @@
 			</div>
 		</div>
 		<div class="row padding">
-			<div class="col-lg-6">
-				<h2><a target="_blank" href="https://www.epfl.ch"><img src="images/logo_epfl.png" width="20%"></img></a></h2>
+			<div id="educationTable" class="col-xl-7">
 				<table>
 					<tr>
-					  <td>2010 - 2012</td>
-					  <td><b>Master of Science</b></td>
+						<th style="min-width: 90px;" class="tabletitle">Studies</th>
+						<th style="min-width: 60px;" class="tabletitle"></th>
+						<th style="max-width: 300px;" class="tabletitle"></th>
+					</tr>
+					<tr>
+						<td rowspan="4"><a target="_blank" href="https://www.epfl.ch">EPFL</td>
+						<td>2010 - 2012</td>
+						<td><b>Master of Science</b></td>
 					</tr><tr>
 						<td></td>
 						<td>Robotics, Automation and Control</td>
 					</tr><tr>
-					  <td>2006 - 2010</td>
-					  <td><b>Bachelor of Science</b></td>
+						<td>2006 - 2010</td>
+						<td><b>Bachelor of Science</b></td>
 					</tr><tr>
-					  <td></td>
-					  <td>Mechanical Engineering</td>
+						<td></td>
+						<td>Mechanical Engineering</td>
+					</tr>
+					<tr>
+						<th class="tabletitle" colspan="3">Continued Studies (extract)</th>
+					</tr>
+					<tr>
+						<td><a target="_blank" href="https://www.offensive-security.com/pwk-oscp/">Offensive Security</td>
+						<td>2020</td>
+						<td><b>Certified Professional - Penetration Testing</b></td>
+					</tr>
+					<tr>
+						<td><a target="_blank" href="https://www.coursera.org/specializations/deep-learning">Stanford Online</td>
+						<td>2018</td>
+						<td><b>Deep Learning</b></td>
+					</tr>
+					<tr>
+						<td><a target="_blank" href="https://www.scaledagile.com/certification/courses/safe-product-owner-product-manager/">SAFe</td>
+						<td>2018</td>
+						<td><b>Product Owner / Product Manager</b></td>
+					</tr>
+					<tr>
+						<td><a target="_blank" href="https://www.coursera.org/learn/machine-learning">Stanford Online</td>
+						<td>2016</td>
+						<td><b>Machine Learning</b></td>
 					</tr>
 				</table>
 			</div>
-			<div class="col-lg-6 padding">
-				<div id="masterThesis" class="tl-flip-card">
-					<div class="card-side tl-front text-white blue-background text-left">
-						<div class="img-container">
-							<a href="#">
-								<img src="images/master_thesis.JPG" width="85%" onclick="document.getElementById('masterThesis').classList.add('flipped');return false;">
-							</a>
-							<div class="img-text-overlay">
-								<h2>Master Thesis</h2>
+			<div id="masterThesis" class="col-xl-5">
+				<div id="masterThesisCard" class="card-container">
+					<div class="flip-card">
+						<div class="card front">
+							<div class="card-img-container">
+								<img src="images/master_thesis.JPG" class="card-img" style="opacity: 1;" alt="IT">
+							</div>
+							<div>
+								<h1 class="text-center project-title blue-text">Master Thesis</h1>
 							</div>
 						</div>
-					</div>
-					<div class="card-side tl-back blue-text">
-						<h2>Master Thesis</h2>
-						<h4>Industrial Delta Robot Control</h4>
-						<p>Development and validation of an advanced control strategy and algorithm for industrial Delta Robots,
-							guaranteeing very high precision (μm) and ultra quick response. <b>Graded with highest mark</b>.
-						</p>
-						<div class="button-div text-right">
-							<button id="getAbstract" class="btn btn-secondary" onclick="window.open('master_thesis_abstract.pdf', '_blank');">See Abstract</button>
-							<button id="masterThesisBackButton" class="flipButton btn btn-secondary">Less</button>
+						<div class="card back bg-light blue-text d-flex flex-column">
+							<h4>Industrial Delta Robot Control</h4>
+							<p>Master Thesis on the development and validation of an advanced control strategy and algorithm for industrial Delta Robots,
+								guaranteeing very high precision (μm) and ultra quick response. <b>Graded with highest mark</b>.
+							</p>
+							<button id="getAbstract" class="btn btn-secondary mt-auto ml-auto" onclick="window.open('master_thesis_abstract.pdf', '_blank');">See Abstract</button>
 						</div>
 					</div>
 				</div>
@@ -393,7 +404,7 @@
 
 <!--- Skillz -->
 <section id="skillzSection">
-	<div class="container-fluid">
+	<div class="container-fluid blue-text">
 		<div class="row text-center">
 			<div class="col-12 heading-row">
 				<h1 class="heading">Skillz</h1>
@@ -402,8 +413,8 @@
 		<div class="col-12 text-left skillz-subtitle">
 			<h4>Specializations</h4>
 		</div>
-		<div class="row blue-text skillz-score-content">
-			<div class="col-md-6">
+		<div class="row">
+			<div class="col-lg-6">
 				<ul class="no-bullets">
 					<li>
 						<span class="skillz-title">Full Stack Development</span>
@@ -422,7 +433,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 						</span>
 					</li>
 					<li>
@@ -432,7 +442,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 					<li>
@@ -442,7 +451,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 					<li>
@@ -452,12 +460,11 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 				</ul>
 			</div>
-			<div class="col-md-6">
+			<div class="col-lg-6">
 				<ul class="no-bullets">
 					<li>
 						<span class="skillz-title">Product Management</span>
@@ -476,7 +483,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 						</span>
 					</li>
 					<li>
@@ -486,7 +492,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 					</li>
 					<li>
 						<span class="skillz-title">Leadership</span>
@@ -505,7 +510,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 				</ul>
@@ -514,8 +518,8 @@
 		<div class="col-12 text-left skillz-subtitle">
 			<h4>IT</h4>
 		</div>
-		<div class="row blue-text skillz-score-content">
-			<div class="col-md-6">
+		<div class="row blue-text">
+			<div class="col-lg-6">
 				<ul class="no-bullets">
 					<li>
 						<span class="skillz-title">Python</span>
@@ -524,7 +528,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 					<li>
@@ -534,17 +537,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
-						</span>
-					</li>
-					<li>
-						<span class="skillz-title">HTML & CSS</span>
-						<span class="skillz-score">
-							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 					<li>
@@ -557,10 +549,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 						</span>
 					</li>
-				</ul>
-			</div>
-			<div class="col-md-6">
-				<ul class="no-bullets">
 					<li>
 						<span class="skillz-title">Kubernetes</span>
 						<span class="skillz-score">
@@ -568,9 +556,12 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
+				</ul>
+			</div>
+			<div class="col-lg-6">
+				<ul class="no-bullets">
 					<li>
 						<span class="skillz-title">Ansible</span>
 						<span class="skillz-score">
@@ -578,7 +569,15 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
+						</span>
+					</li>
+					<li>
+						<span class="skillz-title">HTML & CSS</span>
+						<span class="skillz-score">
+							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 						</span>
 					</li>
 					<li>
@@ -587,8 +586,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 					<li>
@@ -598,7 +595,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 				</ul>
@@ -607,8 +603,8 @@
 		<div class="col-12 text-left skillz-subtitle">
 			<h4>Data Science</h4>
 		</div>
-		<div class="row blue-text skillz-score-content">
-			<div class="col-md-6">
+		<div class="row blue-text">
+			<div class="col-lg-6">
 				<ul class="no-bullets">
 					<li>
 						<span class="skillz-title">Numpy / SKLearn</span>
@@ -627,7 +623,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 					<li>
@@ -637,13 +632,12 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 				</ul>
 			</div>
 
-			<div class="col-md-6">
+			<div class="col-lg-6">
 				<ul class="no-bullets">
 					<li>
 						<span class="skillz-title">Common Apache Tools</span>
@@ -651,8 +645,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 					<li>
@@ -661,8 +653,6 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 				</ul>
@@ -671,8 +661,8 @@
 		<div class="col-12 text-left skillz-subtitle">
 			<h4>Engineering</h4>
 		</div>
-		<div class="row blue-text skillz-score-content">
-			<div class="col-md-6">
+		<div class="row blue-text">
+			<div class="col-lg-6">
 				<ul class="no-bullets">
 					<li>
 						<span class="skillz-title">CATIA / SolidWorks / FreeCAD</span>
@@ -681,13 +671,12 @@
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 				</ul>
 			</div>
 
-			<div class="col-md-6">
+			<div class="col-lg-6">
 				<ul class="no-bullets">
 					<li>
 						<span class="skillz-title">Matlab / Octave / Scilab</span>
@@ -705,8 +694,8 @@
 		<div class="col-12 text-left skillz-subtitle">
 			<h4>Languages</h4>
 		</div>
-		<div class="row blue-text skillz-score-content">
-			<div class="col-md-6">
+		<div class="row blue-text">
+			<div class="col-lg-6">
 				<ul class="no-bullets">
 					<li>
 						<span class="skillz-title">German (Native)</span>
@@ -731,7 +720,7 @@
 				</ul>
 			</div>
 
-			<div class="col-md-6">
+			<div class="col-lg-6">
 				<ul class="no-bullets">
 					<li>
 						<span class="skillz-title">French <a href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages#Common_reference_levels" target="_blank">(C2)</a></span>
@@ -748,9 +737,6 @@
 						<span class="skillz-score">
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
 							<svg class="bi bi-star-fill" fill="#F0C808" width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
-							<svg class="bi bi-star" fill="#18314f" width="1em" height="1em" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg>
 						</span>
 					</li>
 				</ul>
@@ -766,30 +752,30 @@
 			<div class="col-12 blue-background heading-row">
 				<h2>Connect with me</h2>
 			</div>
-			<div class="col-12 social padding">
+			<!-- <div class="col-12 social padding">
 				<a target="_blank" href="https://www.linkedin.com/in/sandromontanari/"><i class="fab fa-linkedin" title="LinkedIn" aria-hidden="true"></i></a>
 				<a target="_blank" href="https://github.com/shiftux"><i class="fab fa-github" title="gitbub" aria-hidden="true"></i></a>
 				<a target="_blank" href="https://www.youtube.com/channel/UCAcrhE_hPxEd2eobvu9gP2g"><i class="fab fa-youtube" title="YouTube" aria-hidden="true"></i></a>
 				<a target="_blank" href="https://www.thingiverse.com/shiftux/designs"><i class="fas fa-cube" title="Thingiverse" aria-hidden="true"></i></a>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<div class="container-fluid padding">
 		<div class="row form-container">
 			<form class="contact-form needs-validation" novalidate action="/connectForm" method="post">
 				<div class="form-group row">
-					<div class="col-sm-2">CV</div>
+					<div class="cv-label col-sm-2">CV</div>
 					<div class="col-sm-10">
 						<div class="form-check">
 							<input class="form-check-input" type="checkbox" id="cvCheckbox" name="cvCheckbox">
 							<label class="form-check-label" for="cvCheckbox">
-								I would like to receive a CV in pdf format<br>(You'll get an automated mail immediately after completing the form)
+								I would like to receive a CV in pdf format (optional)<br>(You'll get an automated mail immediately after completing the form. I'm asking for your name and email so I may learn who is curious about my CV.)
 							</label>
 						</div>
 					</div>
 				</div>
 				<div class="form-group row">
-					<label for="inputName" class="col-sm-2 col-form-label">Name<sup>*</sup></label>
+					<label for="inputName" class="col-sm-2 col-form-label">Name</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="inputName" name="inputName" required minlength="3" >
 						<div class="invalid-feedback">
@@ -798,13 +784,13 @@
 					</div>
 				</div>
 				<div class="form-group row">
-					<label for="inputCompany" class="col-sm-2 col-form-label">Company</label>
+					<label for="inputCompany" class="col-sm-2 col-form-label">Company (optional)</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="inputCompany" name="inputCompany">
 					</div>
 				</div>
 				<div class="form-group row">
-					<label for="inputEmail" class="col-sm-2 col-form-label">Email<sup>*</sup></label>
+					<label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
 					<div class="col-sm-10">
 						<input type="email" class="form-control" id="inputEmail" name="inputEmail" required>
 						<div class="invalid-feedback">
@@ -813,26 +799,30 @@
 					</div>
 				</div>
 				<div class="form-group row">
-					<label for="messageField" class="col-sm-2 col-form-label">Message<sup>*</sup></label>
+					<label for="messageField" class="col-sm-2 col-form-label">Message</label>
 					<div class="col-sm-10">
 						<textarea class="form-control" id="messageField" name="messageField" rows="5" required minlength="5"></textarea>
 						<div class="invalid-feedback">
-							Please enter a message.
+							Please enter a message (minimum length).
 						</div>
 					</div>
 				</div>
-				<div class="g-recaptcha" data-sitekey="6LfPQM8ZAAAAAPvsiuUN6d2lhmmJ--fREVcxRfHH" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-				<input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
-				<div class="invalid-feedback">
-					Please verify the Captcha.
+				<div class="form-group row">
+					<div class="col-sm-12">
+						<div class="g-recaptcha" data-sitekey="6LfPQM8ZAAAAAPvsiuUN6d2lhmmJ--fREVcxRfHH" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+						<input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+						<div class="invalid-feedback">
+							Please verify the Captcha.
+						</div>
+					</div>
 				</div>
 				<div class="form-group row">
-					<div class="col-sm-10">
+					<div class="col-sm-12 text-right">
 						<button type="submit" class="btn btn-primary">Send Message</button>
 					</div>
 				</div>
 			</form>
-			<p><small>Note: I am not storing your information other than in my email account. You will not be contacted by me other than regarding your submitted message.</small></p>
+			<p><small>Note: I am not storing your information other than in my email account. You will not be contacted by me other than regarding your submitted inquiry.</small></p>
 		</div>
 	</div>
 </section>
@@ -843,7 +833,13 @@
 		<div class="row text-center">
 				<div class="col-xs-12 footer-name">
 					<h4>SANDRO MONTANARI</h4>
-					<p><a href ="/index.html#connectSection">Connect with me</a></p>
+					<div class="social padding">
+						<a href="/index.html#connectSection"><i class="fas fa-envelope" title="Email" aria-hidden="true"></i></a>
+						<a target="_blank" href="https://www.linkedin.com/in/sandromontanari/"><i class="fab fa-linkedin" title="LinkedIn" aria-hidden="true"></i></a>
+						<a target="_blank" href="https://github.com/shiftux"><i class="fab fa-github" title="gitbub" aria-hidden="true"></i></a>
+						<a target="_blank" href="https://www.youtube.com/channel/UCAcrhE_hPxEd2eobvu9gP2g"><i class="fab fa-youtube" title="YouTube" aria-hidden="true"></i></a>
+						<a target="_blank" href="https://www.thingiverse.com/shiftux/designs"><i class="fas fa-cube" title="Thingiverse" aria-hidden="true"></i></a>
+					</div>
 				</div>
 		</div>
 	</div>
@@ -864,6 +860,14 @@
 	});
 </script>
 
+<!-- scroll invitation delay -->
+<script>
+    $(document).ready(function(){
+        $("#scrollInvite").hide();
+        setTimeout(function () { $("#scrollInvite").fadeIn(); }, 2000); //ms
+    });
+</script>
+
 <!-- make navbar appear after scroll, and adapt for mobile -->
 <script>
 	$(document).ready(function(){
@@ -877,6 +881,7 @@
 				$(window).scroll(function () {
 					if ($(this).scrollTop() > ($(window).innerHeight() * 0.3)) {
 						$('.navbar').fadeIn();
+						$('#scrollInvite').fadeOut();
 					} else {
 						$('.navbar').fadeOut();
 					}
@@ -940,8 +945,11 @@
 		$("#AsyrilLessButton").click(function() {
 			document.getElementById("tlAsyril").classList.remove("flipped");
 		});
+		$("#masterThesisDetailsButton").click(function() {
+			document.getElementById("masterThesisCard").classList.add("flipped");
+		});
 		$("#masterThesisBackButton").click(function() {
-			document.getElementById("masterThesis").classList.remove("flipped");
+			document.getElementById("masterThesisCard").classList.remove("flipped");
 		});
 	});
 </script>

@@ -1,14 +1,59 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+.row {
+    margin: 0;
+    padding: 0;
+}
 .heading-row {
     margin-top: 2em;
     margin-bottom: 2em;
 }
-
-.card.front h1 {
-    background-color: rgba(255, 255, 255, .6);
-    border-radius: 3px;
-    width: auto;
+.project-pages-container {
+    padding-top: 3em;
+    max-width: 1400px;
+    width: 85%;
+}
+.card-tags {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 2em;
+}
+.card-tag {
+    background-color: #DCDCDC;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: inline-block;
     position: relative;
-    top: 50%;
+    margin-left: 10px;
+    line-height: 1.6em;
+}
+.card-tag::before {
+    content: "";
+	border-top: 13px solid transparent;
+    border-right: 7px solid #DCDCDC;
+    border-bottom: 12px solid transparent;
+    width: 0;
+    height: 0;
+    right:100%;
+    top:0%;
+    position: absolute;
+    clear: both;
+}
+
+/* Media reactive */
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+    .project-pages-container {
+        width: 70%;
+    }
+}
+@media (max-width: 576px) {
+    .project-pages-container {
+        width: 80%;
+    }
 }
