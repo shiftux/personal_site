@@ -3,20 +3,6 @@ $(document).ready(function(){
     $(".welcome").height($(window).innerHeight());
     // hide .navbar first on page load
     if(window.outerWidth > 576) { // desktop
-        if(window.location.pathname === '/index.html'){ // only hide on the index page
-            $(".navbar").hide();
-            // fade in .navbar
-            $(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > ($(window).innerHeight() * 0.3)) {
-                        $('.navbar').fadeIn();
-                        $('#scrollInvite').fadeOut();
-                    } else {
-                        $('.navbar').fadeOut();
-                    }
-                });
-            });
-        }
     } else { // mobile screen
         // source https://www.solodev.com/blog/web-design/bootstrap/build-a-fixed-top-navigation-that-disappears-as-users-scroll.stml
         hideNav();

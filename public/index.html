@@ -94,13 +94,8 @@
 				</div>
 			</div>
 			<div class="col-lg-8">
-				<p>I'm an energetic person who loves to be challenged. This can be in sports, where I climbed mountains as high as 5400m or take my
-					bike and pedal for 2500km across 8 countries, in private projects where I build robots, apps, websites and 3D print planes
-					or in my professional life where thrive in the most innovative environments.
-				</p>
-				<p>I come with a strong engineering background in IT, data science and mechanical engineering as well
-					as ample experience in leadership both in large companies as well as in dynamic startup environments. Experience in product management, agile development,
-					key account management and technical sales.</p>
+				<p>I'm an energetic person who loves to be challenged. This can be in sports, where I climbed mountains as high as 5400m or take my bike and pedal for 2500km across 8 countries. This can also be in personal projects by building robots, apps, websites and 3D print planes, or in my professional life where I look for the most innovative environments.</p>
+				<p>I come with a strong engineering background in IT, data science and mechanical engineering as well as ample experience in leadership, both in large companies and in dynamic startup environments. My past and current profession also allowed me to hone my skills in product management, agile development, key account management and technical sales.</p>
 				<p>Can you provide my next professional challenge? </p>
 			</div>
 		</div>
@@ -853,13 +848,66 @@
 <script src='https://www.google.com/recaptcha/api.js'></script> <!-- reCaptcha -->
 
 <!-- parallax scroll script -->
-<script src="javascripts/parallax_scrolling.js"></script>
+<script src="javascripts/parallax_scrolling.js">
+	window.addEventListener("scroll", function() {
+		const scrollY = window.scrollY;
+		document.querySelector(".welcome").style.transform = `translateY(${-scrollY * 0.2}px)`;
+	});
+</script>
 
 <!-- scroll invitation delay -->
-<script src="javascripts/scroll_invite_delay.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#scrollInvite").hide();
+		setTimeout(function () { $("#scrollInvite").fadeIn(); }, 3000); //ms
+	});
+</script>
 
 <!-- make navbar appear after scroll, and adapt for mobile -->
-<script src="javascripts/navbar_after_scroll.js"></script>
+<script>
+	$(document).ready(function(){
+		// set welcome height to window height
+		$(".welcome").height($(window).innerHeight());
+		// hide .navbar first on page load
+		if(window.outerWidth > 576) { // desktop
+			if(window.location.pathname === '/index.html'){ // only hide on the index page
+				$(".navbar").hide();
+				// fade in .navbar
+				$(function () {
+					$(window).scroll(function () {
+						if ($(this).scrollTop() > ($(window).innerHeight() * 0.3)) {
+							$('.navbar').fadeIn();
+							$('#scrollInvite').fadeOut();
+						} else {
+							$('.navbar').fadeOut();
+						}
+					});
+				});
+			}
+		} else { // mobile screen
+			// source https://www.solodev.com/blog/web-design/bootstrap/build-a-fixed-top-navigation-that-disappears-as-users-scroll.stml
+			hideNav();
+			var previousScroll = 0;
+			$(window).scroll(function () {
+				var currentScroll = $(this).scrollTop();
+				if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()) {
+					if (currentScroll > previousScroll) { // scrolling down (to the lower part of the page)
+						hideNav();
+					} else {
+						showNav();
+					}
+					previousScroll = currentScroll;
+				}
+			});
+		}
+		function hideNav() {
+			$(".navbar").removeClass("is-visible").addClass("is-hidden");
+		}
+		function showNav() {
+			$(".navbar").removeClass("is-hidden").addClass("is-visible").addClass("scrolling");
+		}
+	});
+</script>
 
 <!-- show or hide timeline details -->
 <script>
