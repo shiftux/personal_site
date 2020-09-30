@@ -8,6 +8,10 @@
     margin-top: 2em;
     margin-bottom: 2em;
 }
+.card-img {
+    opacity: 0.9;
+    border-radius: 3px;
+}
 .project-pages-container {
     padding-top: 3em;
     max-width: 1400px;

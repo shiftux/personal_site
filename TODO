@@ -25,14 +25,6 @@ viz feedback:
 Fabrice notes
 
 Have a first selling phrase at the welcome screen
-Start google analytics
-
-Link to contact section after my call to challenge me
-
-Timeline back button aligned with details buttonTimeline top, dashed line to end it
-
-CF web app, put logo on image
-Web app image: take a pic of me using the app on the phone
 
 Primary buttons, more padding, send form at least
 All image boarders the same width
@@ -42,5 +34,3 @@ On the mobile scrolling problem, probably navbar padding
 put jade back?
 
 navbar working accross pages (including scroll spy, this is currently not working since the nav href links are full path)
-
-On the blog, about the RR app, put quote from users
