@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- for mobile sites -->
+	<title>Welcome to Sandro's site</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="../stylesheets/style.css" rel="stylesheet">
+	<link href="../stylesheets/project_pages.css" rel="stylesheet">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179255623-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-179255623-1');
+    </script>
+    <!-- Hotjar Tracking Code for sandromontanari.com -->
+	<script>
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:2016932,hjsv:6};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<section id="navbarSection" style="padding-bottom: 100px;"></section>
+
+<div class="row text-center blue-text">
+    <div class="col-12 heading-row">
+        <h1 class="heading">Adventures</h1>
+    </div>
+</div>
+
+<section id="projectsSection" class="blue-background" style="padding-top: 2em;">
+	<div class="container-fluid padding project-pages-container">
+		<div class="row padding">
+			<div class="col-xl-4 col-md-6 card-container">
+				<div class="flip-card">
+					<div class="card front">
+						<div class="card-img-container">
+							<img src="../images/adventures_greece.jpg" class="card-img" style="opacity: 1;" alt="Keyboard">
+						</div>
+						<div>
+							<h1 class="text-center project-title blue-text">Bike trip across 8 countries</h1>
+						</div>
+					</div>
+					<div class="card back bg-light blue-text">
+						<h4>Taking my bike and pedalling to Greece</h4>
+						<p>
+							From Switzerland to Greece on a bike, across 8 countries in 31 days.
+						</p>
+						<a class="btn btn-primary mt-auto" href="greece.html" role="button">Show me</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-md-6 card-container">
+				<div class="flip-card">
+					<div class="card front">
+						<div class="card-img-container">
+							<img src="../images/projects_sports.JPG" class="card-img" style="opacity: 1;" alt="Keyboard">
+						</div>
+						<div>
+							<h1 class="text-center project-title blue-text">Climbing the Matterhorn</h1>
+						</div>
+					</div>
+					<div class="card back bg-light blue-text">
+						<h4>Climbing the Matterhorn</h4>
+						<p>
+							An alpine adventure taking me up to 4'478 meters above sea level.
+						</p>
+						<a class="btn btn-primary mt-auto" href="matterhorn.html" role="button">Show me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="row text-center">
+    <div class="col-12 heading-row">
+        <h1 class="heading"> </h1>
+    </div>
+</div>
+
+<!--- Footer -->
+<footer id="footer" class="blue-background"></footer>
+
+<!--- Bootstrap scripts inclusions -->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha384-/LjQZzcpTzaYn7qWqRIWYC5l8FWEZ2bIHIz0D73Uzba4pShEcdLdZyZkI4Kv676E" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <!-- for social media icons -->
+
+<!-- include navbar -->
+<script>
+    window.onload = function () {
+        $("#navbarSection").load("../index.html #navbarSection");
+        $("#footer").load("../index.html #footer");
+    }
+</script>
+
+<!-- make navbar appear after scroll, and adapt for mobile -->
+<script src="../javascripts/navbar_after_scroll.js"></script>
+
+</body>
+</html>

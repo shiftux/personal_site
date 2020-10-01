@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- for mobile sites -->
+	<title>Welcome to Sandro's site</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="../stylesheets/style.css" rel="stylesheet">
+    <link href="../stylesheets/blog_style.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" type="text/css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179255623-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-179255623-1');
+    </script>
+    <!-- Hotjar Tracking Code for sandromontanari.com -->
+	<script>
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:2016932,hjsv:6};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<section id="navbarSection" style="padding-bottom: 100px;"></section>
+
+<section id="introImageSection">
+    <div id="introCarousel" class="carousel slide" data-ride="carousel">
+        <!-- <ul class="carousel-indicators">
+            <li data-target="#introCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#introCarousel" data-slide-to="1"></li>
+            <li data-target="#introCarousel" data-slide-to="2"></li>
+            <li data-target="#introCarousel" data-slide-to="3"></li>
+        </ul> -->
+        <div class="carousel-inner active">
+            <div class="carousel-item active">
+                <img src="../images/greece_carousel_1.jpg">
+            </div>
+        </div>
+        <!-- <a class="carousel-control carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a> -->
+    </div>
+</section>
+
+<section class="blue-text view-width">
+    <div class="container-fluid padding blue-text">
+		<div class="row text-center">
+			<div class="col-12 heading-row">
+				<h1 class="heading">Bike trip across Europe</h1>
+			</div>
+		</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <img src="../images/greece_route.png" width="100%">
+            <p class="caption">My route (the holes are boat rides).</p>
+        </div>
+    </div>
+</section>
+<section class="blue-background" style="padding-top: 2em;">
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-sm-12">
+                <h2>Stay tuned for more...</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section cstyle="padding-top: 2em;">
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-sm-12">
+                <h2> </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--- Footer -->
+<footer id="footer" class="blue-background"></footer>
+
+<!--- Bootstrap scripts inclusions -->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha384-/LjQZzcpTzaYn7qWqRIWYC5l8FWEZ2bIHIz0D73Uzba4pShEcdLdZyZkI4Kv676E" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <!-- for social media icons -->
+
+<!-- include navbar -->
+<script>
+    window.onload = function () {
+        $("#navbarSection").load("../index.html #navbarSection");
+        $("#footer").load("../index.html #footer");
+    }
+</script>
+
+<!-- make navbar appear after scroll, and adapt for mobile -->
+<script src="../javascripts/navbar_after_scroll.js"></script>
+
+</body>
+</html>

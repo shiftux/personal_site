@@ -18,7 +18,7 @@ class Mailer {
       }
     });
     this.emailOptions = {
-      from: process.env.MAILER_MYMAIL,
+      from: `Sandro Montanari <${process.env.MAILER_MYMAIL}>`,
       to: process.env.MAILER_MYMAIL,
       subject: 'Received message on Website',
       text: this.message
@@ -30,6 +30,7 @@ class Mailer {
     return this.transporter.sendMail(this.emailOptions)
   }
   confirmInquiry(){
+    this.emailOptions['from'] = 'Sandro Montanari <montanari.sandro@gmail.com>';
     this.emailOptions['subject'] = 'Contacted Sandro Montanari';
     this.emailOptions['to'] = this.email;
     let msg = `Hi ${this.name},\n\n Thanks for reaching out! I've received your inquiry and will be in touch soon.\n`;
