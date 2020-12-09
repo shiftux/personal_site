@@ -1,6 +1,7 @@
 security:
 - securityheaders.com
 - https://www.ssllabs.com/ssltest/analyze.html?d=sandromontanari.com
+- (nessus scan): Remove TLS 1.0! - should be done
 
 nit serious enough pic
 mailto reply
