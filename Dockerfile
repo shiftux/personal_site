@@ -1,3 +1,5 @@
+# build it with
+# docker build -t shiftux/personal-website:v1.0.1 .
 # run it with
 # docker run --rm -p 49160:3000 -d shiftux/personal-website
 FROM node:14
