@@ -41,13 +41,13 @@
         </ul>
         <div class="carousel-inner active">
             <div class="carousel-item active">
-                <img src="../images/keyboard_carousel_1.jpg">
+                <img src="../images/redox_keyboard_carousel_1.jpg">
             </div>
             <div class="carousel-item">
-                <img src="../images/keyboard_carousel_2.jpg">
+                <img src="../images/redox_keyboard_carousel_2.jpg">
             </div>
             <div class="carousel-item">
-                <img src="../images/keyboard_carousel_3.png">
+                <img src="../images/redox_keyboard_carousel_3.png">
             </div>
         </div>
         <a class="carousel-control carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
@@ -65,104 +65,94 @@
     <div class="container-fluid padding blue-text">
 		<div class="row text-center">
 			<div class="col-12 heading-row">
-				<h1 class="heading">Building a customized ergonomic split keyboard</h1>
+				<h1 class="heading">My journey to building a customized ergonomic split keyboard</h1>
 			</div>
 		</div>
     </div>
-    <p><small>Published September 2020</small></p>
+    <p><small>Published Mai 2021</small></p>
     <h4>Motivation</h4>
     <p>
-        When you're working in IT the keyboard is <i>the thing</i> you spend most of your time with. Having one of your very own, that you build and customized for your personal needs, feels natural. Additionally it's a cool project involving electronics, programming and CAD design and makes for a great occupation during Covid times (which, to be brutally honest, was the main motivation).
+        When you're working in IT the keyboard is the thing you spend most of your time with. Having one of your very own, that you build and customized for your personal needs, feels natural. Additionally it's a cool project involving electronics, programming and CAD design and makes for a great occupation during Covid times.
     </p>
-    <h4>The keyboard</h4>
-    <p>Who knows how many keyboards are out there?! A BIG number... So which type do you want to go for? A coworker raised the question on our random Slack channel and mentioned a couple of ergonomic keyboards, amongst them there was the <a href="https://github.com/abstracthat/dactyl-manuform">Dactyl-Manuform</a>. It's an open-source project of an ergonomic split keyboard. I liked the design and the open source approach and read good things about it. So I decided to go for that. In retrospect that decision was taken a bit over eagerly, I should have tested it out further before settling on one, because let me assure you that ergonomic split keyboards are a BIG change compared to what you're used to.<br>
-    But let's have a look at how it's built and then look at the <a href="#conclusion">conclusion and lessons learned</a> at the end.</p>
+    <h4>The Journey</h4>
+    <p>Who knows how many keyboards are out there?! A BIG number... So which type do you want to go for? A coworker raised the question on our random Slack channel and mentioned a couple of ergonomic keyboards, amongst them there was the Dactyl-Manuform (See my <a href="dactyl_keyboard.html">old blog post</a> for all details). It's an open-source project of an ergonomic split keyboard. I liked the design and the open source approach and read good things about it. So I decided to go for that. In retrospect that decision was taken a bit over eagerly, I should have tested it out further before settling on one, because let me assure you that ergonomic split keyboards are a BIG change compared to what you're used to.<br><br>
+
+    I thought I would get the hang of it and that with time I‘d just get used to it, but I did not. It ended up collecting dust while I continued using my Mac Magic Keyboard. The main drawback was that the curvature didn‘t really fit my hands, I kept pressing next to the keys with my pinky fingers and also the front to back curvature seemed weird. Now those are all things you can change in an open source keyboard, but I didn‘t feel like going through several iterations to find all the right parameters.
     <div class="row">
         <div class="col-sm-12 text-center">
-            <img src="../images/keyboard_custom_arrows.jpg" width="100%">
-            <p class="caption">My customizations to the keyboard.</p>
+            <img src="../images/redox_vs_dactyl.jpg" width="100%">
+            <p class="caption">Comparing the Redox (preferred) and the Dactyl (first try) keyboards</p>
+        </div>
+    </div>
+    After letting everything rest for a while I still felt like continuing the self-built keyboard idea and with some more research stumbled across the <a href="https://hackaday.io/project/160610-redox-keyboard">Redox</a> project. This time I printed out a keyboard layout and let my fingers rest on it as naturally as I could and checked how the curvature of the key arrangement compared to my hands. It seemed to have a much nicer fit without tuning too many parameters and it is built flat, with curvature optionally added by its adjustable legs. This all sounded and looked good, so I went with the Redox for my second try and have not regretted it so far (typing on it right now). </p>
+
+    <h4>The keyboard</h4>
+    <p>The Redox is an ergonomic split keyboard, meaning there are two sides (each with its own microcontroller) which are connected via a cable. I prefer to have media and some mouse control on my keyboard, so I modified it to accommodate media keys, a volume knob and a scroll wheel. </p>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <img src="../images/redox_keyboard_custom_arrows.jpg" width="100%">
+            <p class="caption">My customizations to the keyboard</p>
         </div>
     </div>
     <h4>The Build</h4>
     <b>Research and selection</b><br>
     <p>
-        Do your research. Make sure you know what type of keyboard you feel comfortable with and what is important to you.<br><br>
-        The next thing you need to find out is what types of keys (switches) you want to use. There are a couple of brands and all have different types of keys, some harder, some softer to the touch, some with mechanical feedback, some without, some "clicky" (noisy), some not... You won't know what feels good until you tried. I bought a <a href="https://www.amazon.com/Cherry-Switch-Tester-keyboard-Sampler/dp/B01GZHU1EG/ref=sr_1_1?dchild=1&keywords=AKWOX+key+tester&qid=1600942315&sr=8-1">key tester</a> and an additional <a href="https://www.pcgamingrace.com/products/glorious-mx-switch-sample-pack">set of trial keys</a> to test them. Not an easy task, I changed my mind a couple of times over in the process and had other people try it all out. In the end I chose the <a href="https://www.digitec.ch/de/s1/product/glorious-pc-gaming-race-kailh-pro-purple-switches-120-stueck-maus-tastatur-zubehoer-12826227">Kailh Purple Switches</a>. When in doubt I could also recommend the Cherry MX Red, which are always a safe choice (but also way too mainstream ;).
+        Again, do your research. Make sure you know what type of keyboard you feel comfortable with and what is important to you. Try not to do what I did and go through the whole thing twice...<br><br>
+
+        Irrelevant of what model you want to build, the first thing you need to find out is what types of keys (switches) you want to use. There are a couple of brands and all have different types of keys, some harder, some softer to the touch, some with mechanical feedback, some without, some "clicky" (noisy), some not... You won't know what feels good until you tried. I bought a <a href="https://www.amazon.com/Cherry-Switch-Tester-keyboard-Sampler/dp/B01GZHU1EG/ref=sr_1_1?dchild=1&keywords=AKWOX+key+tester&qid=1600942315&sr=8-1">key tester</a> and an additional <a href="https://www.pcgamingrace.com/products/glorious-mx-switch-sample-pack">set of trial keys</a> to test them. Not an easy task, I changed my mind a couple of times over in the process and had other people try it all out. In the end I chose the <a href="https://www.digitec.ch/de/s1/product/glorious-pc-gaming-race-kailh-pro-purple-switches-120-stueck-maus-tastatur-zubehoer-12826227">Kailh Purple Switches</a>. When in doubt I could also recommend the Cherry MX Red, which are always a safe choice (but also way too mainstream ;).
     </p>
     <div class="row">
         <div class="col-sm-12 text-center">
             <img src="../images/keyboard_key_testing.jpg" width="100%">
-            <p class="caption">Testing out which keys feel best.</p>
+            <p class="caption">Testing out which keys feel best</p>
         </div>
     </div>
     <b>CAD</b><br>
     <p>
-        The Dactly-Manuform has open source <a href="http://www.openscad.org/">OpenSCAD</a> files that allow you to adapt the keyboard to your liking. It makes it easy for you to change the ergonomic parameters, such as curvature and height, but also allows you to customize your build to your liking. Me I knew I wanted to add multimedia control keys, a volume knob and a scroll knob. I had to read a bit about Clojure, but the learning is pretty straight forward and you can basically get the job done by looking at the existing code and copy-pasting plus adapting some parts. Additionally I change the screw inserts and the connectors. Typical 3M screw inserts are pretty hard to find so I changed the insert holes to hexagonal holes which hold M3 nuts. They need to be glued rather than just fitted but I have tons of them and they are more convenient in my opinion. Also RJ9 cables and female plugs are hard to find so I changed those to use TRS mini-jack connectors.
+        The Redox has open source <a href="http://www.openscad.org/">OpenSCAD</a> files that allow you to adapt the keyboard to your liking. It makes it easy for you to change the ergonomic parameters, such as curvature and height, but also allows you to customize your build to your liking. Me I knew I wanted to add multimedia control keys, a volume knob and a scroll knob. I had to read a bit about OpenSCAD, but the learning is pretty straight forward and you can basically get the job done by looking at the existing code and copy-pasting plus adapting some parts. Additionally I changed the USB plug hole to fit a short shape cable, which is much sturdier than the microcontroller‘s on-bard micro-USB port. And I included holes for the TRS mini-jack connectors I wanted to use to connect the 2 keyboards.
     </p>
     <div class="row">
-        <div class="col-md-6 text-center">
-            <img src="../images/keyboard_openscad.png" width="100%">
-            <p class="caption">The CAD model.</p>
-        </div>
-        <div class="col-md-6 text-center">
-            <img src="../images/keyboard_multimedia_buttons.jpg" width="100%">
-            <p class="caption">My custom multimedia keys.</p>
+        <div class="col-sm-12 text-center">
+            <img src="../images/redox_keyboard_openscad.png" width="100%">
+            <p class="caption">The CAD model</p>
         </div>
     </div>
     <b>Printing</b><br>
     <p>
-        Once you are happy with your CAD files go ahead and print the base of your keyboard. This takes a while, they're relatively big parts for printers to handle. Since they are hollow inside I printed with support, which takes a little extra time as well. For a nicer finish, after printing you can sand down your parts and then paint them. I didn't because I printed multimedia logos on my case and didn't want those to get sanded away.
+        Once you are happy with your CAD files go ahead and print all parts of your keyboard. This takes a while, they're relatively big parts for printers to handle. For a nicer finish, after printing you can sand down your parts and then paint them. Personally I didn't I enjoy the rougher finish of a printed PLA part.
     </p>
     <div class="row">
         <div class="col-sm-12 text-center">
-            <img src="../images/keyboard_connectors.jpg" width="100%">
-            <p class="caption">The connectors: a TRS mini-jack to connect the two split sides and a single micro-USB cable for power and to transmit data.</p>
+            <img src="../images/redox_keyboard_connectors.jpg" width="100%">
+            <p class="caption">The connectors: a TRS mini-jack to connect the two split sides and a single micro-USB cable for power and to transmit data</p>
         </div>
     </div>
     <b>Soldering</b><br>
     <p>
-        Clearly the most tricky part of it all (but that might just be me, my soldering skills are mediocre). Basically a keyboard can be considered as a matrix of rows and columns, the switches are the elements in the matrix. Let's say switch "1" is on row 1, column 1, "w" is on row 2, column 2, etc. Pressing a switch will connect a row and column and that's how the microcontroller will know what key was pressed. Additionally diodes are added to every switch so that you can press 2 keys at the same time and it remains a unique detectable combination. All keys need 2 connections, diodes and microcontroller connections, for 64 keys you solder 216 connections, not counting the multimedia and mini-jack connectors. I used strips of copper tape to connect the columns (less soldering) and prototyping board to help connecting the rows. This setup worked well and I ended up with stable connections. Just make sure to isolate the rows from the columns in order not to have ghost typing.
+        Clearly the trickiest part of it all (but that might just be me, my soldering skills are mediocre). Basically a keyboard can be considered as a matrix of rows and columns, the switches are the elements in the matrix. Let's say switch "1" is on row 1, column 1, "w" is on row 2, column 2, etc. Pressing a switch will connect a row and column and that's how the microcontroller will know what key was pressed. Additionally diodes are added to every switch so that you can press 2 keys at the same time and it remains a unique detectable combination. All keys need 2 connections, diodes and microcontroller connections, for 64 keys you solder 216 connections, not counting the multimedia, rotary encoder and mini-jack connectors. I used a technique where I prepared cables with partially removed insulation sleeves at the soldering points (nicely explained here). This takes quite some perperation work, but is more stable than the copper wire technique i used in the <a href="dactyl_keyboard.html">Dactyl assembly</a> and is much less a risk of false connections, since most of all wires remain insulated compared to the open copper wire.
     </p>
     <div class="row">
-        <div class="col-sm-12 text-center">
-            <img src="../images/keyboard_soldering.jpg" width="100%">
-            <p class="caption">Soldering it all in place.</p>
+        <div class="col-md-6 text-center">
+            <img src="../images/redux_partially_insulated_cables.png" width="100%">
+            <p class="caption">Partially de-insulated cables</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="../images/redox_keyboard_soldering.jpg" width="100%">
+            <p class="caption">The soldered switches</p>
         </div>
     </div>
     <b>Programming</b><br>
     <p>
-        When selecting a microcontroller (in a split keyboard it's easiest to work with 2) make sure you select one on which the <a href="https://www.arduino.cc/reference/en/language/functions/usb/keyboard/">Arduino keyboard library</a> can run (32u4 or SAMD micro based boards), I used <a href="https://www.sparkfun.com/products/12640">Sparkun Pro Micros</a>. For the actual programming a lot of the work is already done for you in the great <a href="https://qmk.fm/">QMK project</a>. The Dactyl-Manuform is already in the library and basically all that remains to do is to program a key matrix that fits your desired layout. Just for fun you cxn trick your brxin xnd progrxm the "x" key on the "a" switch xnd then your teats look like this. Basically you have complete freedom of how your layout will look like, you'll just have to retrain your fingers to be as quick on the new layout as you were on a traditional QWERTY or QWERTZ in my case.
+        When selecting a microcontroller (in a split keyboard it's easiest to work with 2) make sure you select one on which you can run the <a href="https://www.arduino.cc/reference/en/language/functions/usb/keyboard/">Arduino keyboard library</a> (32u4 or SAMD micro based boards), I used <a href="https://www.sparkfun.com/products/12640">Sparkun Pro Micros</a>. For the actual programming a lot of the work is already done for you in the great <a href="https://qmk.fm/">QMK project</a>. The Redox is already in the library and I made an extension to it which handles the additional media keys. So for future users now all that remains to do is to define a keyboard layout which fits your hand's desire. Just for fun you cxn trick your brxin xnd progrxm the "x" key on the "a" switch xnd then your teat looks like this. Basically you have complete freedom of how your layout will look, you'll just have to retrain your fingers to be as quick on the new layout as you were on a traditional QWERTY or QWERTZ in my case.
     </p>
 
-    <h4>Parts and resources</h4>
-    List of parts I used:
-    <ul>
-        <li>2 <a href="https://www.sparkfun.com/products/12640">Sparkun Pro Micros</a></li>
-        <li>2 <a href="https://www.brack.ch/delock-audio-adapter-buchse-675235?query=3%2C5mm+buchse&active_search=true">3.5mm TRS mini-jacks</a></li>
-        <li><a href="https://www.brack.ch/hama-audio-kabel-klinke-3-182926">Curled 3.5mm TRS mini-jack cable</a></li>
-        <li>Min 64 <a href="https://www.brack.ch/velleman-dioden-k-diode1-120-stueck-108355?query=dioden&active_search=true">Diodes</a></li>
-        <li>Short <a href="https://www.brack.ch/delock-usb-otg-kabel-microb-shapecable-0-15-m-526554?query=micro+usb+buchse&active_search=true
-            ">micro-USB connector cable</a> to bridge the connection from the casing to the microcontroller</li>
-        <li>Your preferred type of <a href="https://www.digitec.ch/de/s1/product/glorious-pc-gaming-race-kailh-pro-purple-switches-120-stueck-maus-tastatur-zubehoer-12826227">switches</a></li>
-        <li>A set of keycaps, here you can use the ones from an old keyboard or go ahead and order some, for example <a href="https://www.maxkeyboard.com/">here</a></li>
-        <li><a href="https://www.amazon.com/gp/product/B009KB86BU">Copper tape</a></li>
-        <li>Some <a href="https://www.amazon.com/gp/product/B008CPVMMU">strip board</a></li>
-        <li>A traditional USB-A to micro-USB cable (same you used to charge your older Android phones)</li>
-        <li>A bunch of screws and nuts (M3)</li>
-        <li>For the scroll knob and volume knob I used 2 <a href="https://www.velleman.eu/products/view/?id=439226">rotary encoders</a></li>
-        <li>A couple of push buttons for the multimedia switches</li>
-    </ul>
-    Additionally I found a couple of resources very helpful during the process:
-    <ul>
-        <li>Dactly-Manuform github pages <a href="https://github.com/abstracthat/dactyl-manuform">here</a> and <a href="https://github.com/adereth/dactyl-keyboard/blob/master/guide/README.org#wiring">here</a></li>
-        <li>A Dactly-Manuform forum on <a href="https://geekhack.org/index.php?topic=88576.100">Geekhack</a></li>
-        <li>The <a href="https://www.reddit.com/r/MechanicalKeyboards/wiki/index#wiki_.22what_keyboard.2Fswitch_do_i_buy.3F.22">reddit mechanical keyboard wiki</a></li>
-        <li>A <a href="https://medium.com/swlh/complete-idiot-guide-for-building-a-dactyl-manuform-keyboard-53454845b065">build guide on Medium</a></li>
-        <li>The amazing <a href="https://qmk.fm/">QMK project</a></li>
-    </ul>
+    <h4>Code, parts and resources</h4>
+    A bill of material, the CAD files, programming instructions, wiring diagrams as well as more detailed instructions can be found on my <a href="https://github.com/shiftux/redox-media-keyboard">Github repo</a>.<br>
+    I've also opened a pull request on the QMK repo, where I share the keyboard layout and the programing instructions <a href="https://github.com/qmk/qmk_firmware/tree/master/keyboards/redox/">here</a>.
     <h4 id="conclusion">Conclusion and lessons learned</h4>
-    I had a ton of fun building my keyboard and it works as expected! - But I'm not using it as I thought I would. It turns out that the shape I chose for the Dactly-Manuform doesn't really go well for me... I wish I had known before... <br>
-    My biggest piece of advice I can give you is to find someone with a split ergonomic keyboard and test it out. During the build process I tried to test it several times, just inserting the switches into the case to see how it all felt. But at that time I hadn't received the keycaps and didn't have an old keyboard laying around to borrow some so it felt completely different than it feels now. What particularly annoys me is that the key column for the little finger is somewhat shifted downwards, I keep missing keys and it does not feel ergonomic. When I find the courage I'll print a second try of the casing and resolder the keys, but for now I haven't worked up the courage to do all the soldering again. Still I have my own keyboard now and I love it!
+    I had a ton of fun building my keyboard and for the past couple of months I've been using it without ever wanting to go back to my old keyboard. <br>
+    My biggest piece of advice I can give you is to find someone with a split ergonomic keyboard and test it out. During the build process I tried to test it several times, just inserting the switches into the case to see how it all felt. But at that time I hadn't received the keycaps and didn't have an old keyboard laying around to borrow them from. In the end it felt completely different on the real thing and on the Dactyl it turned out that it did not fit hands or my feel of what should be ergonomic. <br>
+    I'm happy I went through the pain of taking the Dactyl back apart and building the Redox. Since it's standing on my desk I'm loving it and it has brought me great joy to be typing on my self-built customized keyboard.
 </section>
 
 <!--- Footer -->
