@@ -72,7 +72,7 @@
     <p><small>Published Mai 2021</small></p>
     <h4>Motivation</h4>
     <p>
-        When you're working in IT the keyboard is the thing you spend most of your time with. Having one of your very own, that you build and customized for your personal needs, feels natural. Additionally it's a cool project involving electronics, programming and CAD design and makes for a great occupation during Covid times.
+        When you're working in IT the keyboard is the thing you spend most of your time with. Having one of your very own, that you built and customized for your personal needs, feels natural. Additionally it's a cool project involving electronics, programming and CAD design and makes for a great occupation during Covid times.
     </p>
 
     <!-- <div class="row">
@@ -82,9 +82,9 @@
     </div> -->
 
     <h4>The Journey</h4>
-    <p>Who knows how many keyboards are out there?! A BIG number... So which type do you want to go for? A coworker raised the question on our random Slack channel and mentioned a couple of ergonomic keyboards, amongst them there was the Dactyl-Manuform (See my <a href="dactyl_keyboard.html">old blog post</a> for all details). It's an open-source project of an ergonomic split keyboard. I liked the design and the open source approach and read good things about it. So I decided to go for that. In retrospect that decision was taken a bit over eagerly, I should have tested it out further before settling on one, because let me assure you that ergonomic split keyboards are a BIG change compared to what you're used to.<br><br>
+    <p>Who knows how many keyboards are out there?! A BIG number... So which type do you want to go for? A coworker raised the question on our random Slack channel and mentioned a couple of ergonomic keyboards, amongst them there was the Dactyl-Manuform (See my <a href="dactyl_keyboard.html">old blog post</a> for all details). It's an open-source project of an ergonomic split keyboard. I liked the design and the open source approach and read good things about it. So I decided to go for that. In retrospect that decision was taken a bit  eagerly, I should have tested it out further before settling on one, because let me assure you that ergonomic split keyboards are a BIG change compared to what you're used to.<br><br>
 
-    I thought I would get the hang of it and that with time I‘d just get used to it, but I did not. It ended up collecting dust while I continued using my Mac Magic Keyboard. The main drawback was that the curvature didn‘t really fit my hands, I kept pressing next to the keys with my pinky fingers and also the front to back curvature seemed weird. Now those are all things you can change in an open source keyboard, but I didn‘t feel like going through several iterations to find all the right parameters.
+    I thought I would get the hang of it and that with time I‘d just get used to it, but I did not. It ended up collecting dust while I continued using my Mac Magic Keyboard. The main drawback was that the curvature did not really fit my hands, I kept pressing next to the keys with my pinky fingers and also the front to back curvature seemed weird. Now those are all things you can change in an open source keyboard, but I didn‘t feel like going through several iterations to find all the right parameters.
     <div class="row">
         <div class="col-sm-12 text-center">
             <img src="../images/redox_vs_dactyl.jpg" width="100%">
@@ -116,7 +116,7 @@
     </div>
     <b>CAD</b><br>
     <p>
-        The Redox has open source <a href="http://www.openscad.org/">OpenSCAD</a> files that allow you to adapt the keyboard to your liking. It makes it easy for you to change the ergonomic parameters, such as curvature and height, but also allows you to customize your build to your liking. Me I knew I wanted to add multimedia control keys, a volume knob and a scroll knob. I had to read a bit about OpenSCAD, but the learning is pretty straight forward and you can basically get the job done by looking at the existing code and copy-pasting plus adapting some parts. Additionally I changed the USB plug hole to fit a short shape cable, which is much sturdier than the microcontroller‘s on-bard micro-USB port. And I included holes for the TRS mini-jack connectors I wanted to use to connect the 2 keyboards.
+        The Redox has open source <a href="http://www.openscad.org/">OpenSCAD</a> files that allow you to adapt the keyboard to your liking. It makes it easy for you to change the ergonomic parameters, such as curvature and height, but also allows you to customize your build to your liking. Me I knew I wanted to add multimedia control keys, a volume knob and a scroll knob. I had to read a bit about OpenSCAD, but the learning is pretty straightforward and you can basically get the job done by looking at the existing code and copy-pasting plus adapting some parts. Additionally I changed the USB plug holder to fit a short shape cable, which is much sturdier than the microcontroller‘s on-bard micro-USB port. And I included holes for the TRS mini-jack connectors I wanted to use to connect the 2 keyboards.
     </p>
     <div class="row">
         <div class="col-sm-12 text-center">
@@ -126,7 +126,7 @@
     </div>
     <b>Printing</b><br>
     <p>
-        Once you are happy with your CAD files go ahead and print all parts of your keyboard. This takes a while, they're relatively big parts for printers to handle. For a nicer finish, after printing you can sand down your parts and then paint them. Personally I didn't I enjoy the rougher finish of a printed PLA part.
+        Once you are happy with your CAD files go ahead and print all parts of your keyboard. This takes a while, they're relatively big parts for printers to handle. For a nicer finish, after printing you can sand down your parts and then paint them. Personally I didn't, I enjoy the rougher finish of a printed PLA part.
     </p>
     <div class="row">
         <div class="col-sm-12 text-center">
@@ -136,7 +136,7 @@
     </div>
     <b>Soldering</b><br>
     <p>
-        Clearly the trickiest part of it all (but that might just be me, my soldering skills are mediocre). Basically a keyboard can be considered as a matrix of rows and columns, the switches are the elements in the matrix. Let's say switch "1" is on row 1, column 1, "w" is on row 2, column 2, etc. Pressing a switch will connect a row and column and that's how the microcontroller will know what key was pressed. Additionally diodes are added to every switch so that you can press 2 keys at the same time and it remains a unique detectable combination. All keys need 2 connections, diodes and microcontroller connections, for 64 keys you solder 216 connections, not counting the multimedia, rotary encoder and mini-jack connectors. I used a technique where I prepared cables with partially removed insulation sleeves at the soldering points (nicely explained here). This takes quite some perperation work, but is more stable than the copper wire technique i used in the <a href="dactyl_keyboard.html">Dactyl assembly</a> and is much less a risk of false connections, since most of all wires remain insulated compared to the open copper wire.
+        Clearly the trickiest part of it all (but that might just be me, my soldering skills are mediocre). Basically a keyboard can be considered as a matrix of rows and columns, the switches are the elements in the matrix. Let's say switch "1" is on row 1, column 1, "w" is on row 2, column 2, etc. Pressing a switch will connect a row and column and that's how the microcontroller will know what key was pressed. Additionally diodes are added to every switch so that you can press 2 keys at the same time and it remains a unique detectable combination. All keys need 2 connections, diodes and microcontroller connections, for 64 keys you solder 216 connections, not counting the multimedia, rotary encoder and mini-jack connectors. I used a technique where I prepared cables with partially removed insulation sleeves at the soldering points (nicely explained here). This takes quite some preparation work, but is more stable than the copper wire technique i used in the <a href="dactyl_keyboard.html">Dactyl assembly</a> and is much less a risk of false connections, since most of all wires remain insulated compared to the open copper wire.
     </p>
     <div class="row">
         <div class="col-md-6 text-center">
