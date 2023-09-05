@@ -113,8 +113,14 @@
 				</div>
 			</div>
 			<div class="col-lg-8">
-				<p>I'm an energetic person who loves to be challenged. This can be in sports, where I climbed mountains as high as 5895m or take my bike and pedal for 2500km across 8 countries. This can also be in personal projects by building robots, apps, websites and 3D print planes, or in my professional life where I look for the most innovative environments.</p>
-				<p>I come with a strong engineering background in IT, data science and mechanical engineering as well as ample experience in leadership, both in large companies and in dynamic startup environments. My past and current profession also allowed me to hone my skills in product management, agile development, key account management and technical sales.</p>
+				<p>I'm an energetic person who loves to be challenged. This can be in sports, where I climbed mountains as high as
+					5'895m or take my bike and pedal for 2'500km across 8 countries. This can also be in personal projects by building
+					robots, apps, websites and 3D print RC planes, or in my professional life where I look for the most innovative
+					environments.</p>
+				<p>I come with a strong engineering background in IT, data science and mechanical engineering as well as ample
+					experience in senior IT management, both in large companies and in dynamic startup environments. My past and current
+					profession also allowed me to hone my skills in product management, agile development, key account management and
+					technical sales.</p>
 				<p>Can you provide my next professional challenge? <a href="/index.html#connectSection"><i class="fas fa-envelope" title="Email" aria-hidden="true"></i></a> </p>
 			</div>
 		</div>
@@ -239,28 +245,53 @@
 		<!-- <hr class="timeline-hr"> -->
 		<div id="tl-chevron"></div>
 		<div class="timeline">
-		<!-- twint -->
+		<!-- twint head t&a -->
+		<div class="container left">
+			<div id="tlTwintTA" class="tl-flip-card">
+				<div class="card-side tl-front text-white blue-background text-left d-flex flex-column">
+					<h2><a target="_blank" href="https://www.twint.ch"><img class="tl-logo-img" src="images/logo_twint.png"></img></a>
+					</h2>
+					<p>August 2022 &mdash; present</p>
+					<h5>Head of Technology & Architecture, Senior Management</h5>
+					<p><i>Bern, CH / Zürich, CH</i></p>
+					<p>Mobile Payment</p>
+					<p>Leading the entire development and architecture at TWINT.</p>
+					<button id="twintTADetailsButton" class="btn btn-secondary ml-auto mt-auto">Details</button>
+				</div>
+				<div class="card-side tl-back blue-text d-flex flex-column">
+					<p><b>Role: </b>TWINT is the market leader in Swiss mobile payment solutions. Leading a team of lead architects
+						governing the entire IT development & architecture of TWINT. Member of the senior management.</p>
+					<p><b>Responsibilities: </b>Define company-wide IT strategy, take technological decisions on the company level,
+						establish & realize the long-term stability & scalability.</p>
+					<p><b>Achievements:</b> First CH financial institute to migrate to AWS, increased TWINT’s stability by 32%,
+						significant cost reduction due to performance optimizations, scaled my team from 3 to 11 people.
+					</p>
+					<button id="twintTALessButton" class="btn btn-secondary ml-auto mt-auto">Less</button>
+				</div>
+			</div>
+		</div>
+		<!-- twint LEA -->
 		<div class="container right">
 			<div id="tlTwint" class="tl-flip-card">
 				<div class="card-side tl-front text-white blue-background text-left d-flex flex-column">
 					<h2><a target="_blank" href="https://www.twint.ch"><img class="tl-logo-img" src="images/logo_twint.png"></img></a>
 					</h2>
-					<p>April 2021 &mdash; present</p>
-					<h5>Lead Enterprise Architect, Management</h5>
-					<p><i>Bern, CH / Zürich, CH</i></p>
-					<p>Mobile Payment</p>
-					<p>Leading the design of the target architecture at TWINT.</p>
-					<button id="twintDetailsButton" class="btn btn-secondary ml-auto mt-auto">Details</button>
-				</div>
-				<div class="card-side tl-back blue-text d-flex flex-column">
-					<p><b>Role: </b>TWINT is the market leader in Swiss mobile payment solutions. I am leading the design of the
-						technological target architecture, establishing the technological vision and strategy for the company, reporting
-						to the CTO.</p>
-					<p><b>Responsibilities: </b>Define company-wide processes, leading enterprise-wide projects, take technological
-						decisions on the company level,
-						technical lead for the collaboration of European mobile payment schemes.</p>
-					<p><b>Achievements:</b> Made international payments possible with TWINT, realized TWINT's migration to AWS.
-					</p>
+								<p>April 2021 &mdash; July 2022</p>
+								<h5>Lead Enterprise Architect, Management</h5>
+								<p><i>Bern, CH / Zürich, CH</i></p>
+								<p>Mobile Payment</p>
+								<p>Leading the design of the target architecture at TWINT.</p>
+								<button id="twintDetailsButton" class="btn btn-secondary ml-auto mt-auto">Details</button>
+								</div>
+								<div class="card-side tl-back blue-text d-flex flex-column">
+								<p><b>Role: </b>Defining the target architecture for the product, establishing the technological vision and
+									strategy for the company,
+									reporting to the Head of Technology & Architecture.</p>
+								<p><b>Responsibilities: </b>Define company-wide architecture & processes, lead & guide developers and business
+									architects, coordinate & manage internal & external stakeholders</p>
+								<p><b>Achievements:</b> Built international interoperability - made international payments possible with TWINT,
+									established the basis for TWINT's IT migration to AWS.
+								</p>
 					<button id="twintLessButton" class="btn btn-secondary ml-auto mt-auto">Less</button>
 				</div>
 			</div>
@@ -1041,6 +1072,12 @@
 		});
 		$("#inpherLessButton").click(function() {
 			document.getElementById("tlInpher").classList.remove("flipped");
+		});
+		$("#twintTADetailsButton").click(function () {
+			document.getElementById("tlTwintTA").classList.add("flipped");
+		});
+		$("#twintTALessButton").click(function () {
+			document.getElementById("tlTwintTA").classList.remove("flipped");
 		});
 		$("#twintDetailsButton").click(function () {
 			document.getElementById("tlTwint").classList.add("flipped");
